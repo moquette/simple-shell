@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "allowJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "paths": {
+      "components/*": ["src/components/*"],
+      "styles/*": ["src/styles/*"],
+      "pages/*": ["src/pages/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["./src", "./webpack.config.ts"]
+}

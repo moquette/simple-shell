@@ -1,0 +1,25 @@
+@layer base {
+  body {
+    font-family: Inter, sans-serif;
+    @apply antialiased animate-fadeIn m-0 p-0;
+  }
+  h2 {
+    @apply text-4xl py-2 font-black;
+  }
+
+  p {
+    @apply text-xl py-5;
+  }
+
+  .popover-panel {
+    .navbar-link {
+      @apply py-4;
+      &.active {
+        @apply bg-black text-white;
+      }
+      &:hover:not(.active) {
+        @apply bg-gray-100 text-black;
+      }
+    }
+  }
+}
