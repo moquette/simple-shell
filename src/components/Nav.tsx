@@ -36,7 +36,7 @@ export default function Nav() {
                     {item.title}
                   </Popover.Button>
                 ))}
-                <hr className="mt-3" />
+                <hr />
                 <a
                   href="https://github.com/moquette/"
                   target="_blank"
