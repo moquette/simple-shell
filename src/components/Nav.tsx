@@ -37,13 +37,28 @@ export default function Nav() {
                   </Popover.Button>
                 ))}
                 <hr className="mt-3" />
-                <a href="#" className="navbar-link">
+                <a
+                  href="https://github.com/moquette/"
+                  target="_blank"
+                  className="navbar-link"
+                  rel="noreferrer"
+                >
                   GitHub
                 </a>
-                <a href="#" className="navbar-link">
+                <a
+                  href="https://www.linkedin.com/in/jmoquette/"
+                  target="_blank"
+                  className="navbar-link"
+                  rel="noreferrer"
+                >
                   LinkedIn
                 </a>
-                <a href="#" className="navbar-link">
+                <a
+                  href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
+                  target="_blank"
+                  className="navbar-link"
+                  rel="noreferrer"
+                >
                   Contact
                 </a>
               </div>
