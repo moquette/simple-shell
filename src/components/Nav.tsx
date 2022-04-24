@@ -37,17 +37,14 @@ export default function Nav() {
               <div className="relative overflow-hidden rounded-lg  ring-1 ring-gray-200 ">
                 <div className="relative grid gap-8 rounded-lg bg-white p-7">
                   {pages.map((item) => (
-                    <NavLink
+                    <Popover.Button
+                      as={NavLink}
+                      to={item.path}
                       key={item.title}
-                      className={({isActive}) =>
-                        isActive
-                          ? 'navbar-link  -m-3 rounded-lg p-2 text-center font-bold transition duration-150 ease-in-out active'
-                          : 'navbar-link  -m-3 rounded-lg p-2 text-center font-bold transition duration-150 ease-in-out'
-                      }
-                      to={`${item.path}`}
+                      className="navbar-link w-full -mb-5 rounded-lg p-2 text-center font-bold transition duration-150 ease-in-out"
                     >
                       {item.title}
-                    </NavLink>
+                    </Popover.Button>
                   ))}
                   <hr />
                   <a
