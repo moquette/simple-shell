@@ -10,16 +10,4 @@
   p {
     @apply text-xl py-5;
   }
-
-  .popover-panel {
-    .navbar-link {
-      @apply py-4;
-      &.active {
-        @apply bg-black text-white;
-      }
-      &:hover:not(.active) {
-        @apply bg-gray-100 text-black;
-      }
-    }
-  }
 }
