@@ -5,16 +5,6 @@ export default function Resume() {
     <main>
       <h2>Resume</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Odio facilisis
-        mauris sit amet massa vitae. Euismod lacinia at quis risus sed vulputate
-        odio. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. At
-        quis risus sed vulputate odio ut enim. Aliquam ultrices sagittis orci a
-        scelerisque purus semper. Ornare arcu dui vivamus arcu felis bibendum
-        ut. Semper eget duis at tellus at. Tincidunt eget nullam non nisi est
-        sit amet. Ornare arcu odio ut sem nulla pharetra.
-      </p>
-      <p>
         Accumsan tortor posuere ac ut consequat semper viverra nam. Dolor magna
         eget est lorem ipsum dolor sit amet. Amet justo donec enim diam
         vulputate ut. Eget aliquet nibh praesent tristique magna sit amet purus.

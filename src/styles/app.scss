@@ -11,3 +11,18 @@
     @apply text-xl py-5;
   }
 }
+
+#root {
+  @apply bg-gray-100;
+}
+
+.main {
+  box-shadow: 0px 54px 47px -1px rgba(0, 0, 0, 0.35);
+  transition-duration: 0.8s;
+  background-color: #fff;
+}
+
+.end-of-page {
+  transform: scale(0.94);
+  border-radius: 1rem;
+}
