@@ -26,3 +26,9 @@
   transform: scale(0.94);
   border-radius: 1rem;
 }
+
+footer {
+  h6 {
+    @apply text-xl font-bold text-center;
+  }
+}

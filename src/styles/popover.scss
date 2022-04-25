@@ -8,13 +8,13 @@
   .popover-panel {
     @apply absolute left-full z-10 mt-4 w-screen max-w-xs -translate-x-full transform;
     .wrapper {
-      @apply relative overflow-hidden rounded-lg  ring-1 ring-gray-200;
+      @apply relative overflow-hidden rounded-lg  ring-1 ring-gray-200 shadow-xl;
       > div {
         @apply relative grid gap-2 rounded-lg bg-white p-2;
       }
     }
     .navbar-link {
-      @apply py-4  w-full  rounded-lg p-2 text-center font-bold transition ease-in-out duration-150;
+      @apply w-full rounded-lg p-2 font-bold transition ease-in-out duration-150 text-lg;
       &.active {
         @apply bg-black text-white;
       }

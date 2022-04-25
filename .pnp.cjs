@@ -68,6 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier-plugin-tailwindcss", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:0.1.10"],\
             ["react", "npm:18.0.0"],\
             ["react-dom", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:18.0.0"],\
+            ["react-icons", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:4.3.1"],\
             ["react-refresh", "npm:0.12.0"],\
             ["react-router-dom", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:6.3.0"],\
             ["sass", "npm:1.50.1"],\
@@ -9829,6 +9830,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-icons", [\
+        ["npm:4.3.1", {\
+          "packageLocation": "./.yarn/cache/react-icons-npm-4.3.1-46cb955834-2cc608acdd.zip/node_modules/react-icons/",\
+          "packageDependencies": [\
+            ["react-icons", "npm:4.3.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:4.3.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-icons-virtual-3cff6c04d5/0/cache/react-icons-npm-4.3.1-46cb955834-2cc608acdd.zip/node_modules/react-icons/",\
+          "packageDependencies": [\
+            ["react-icons", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:4.3.1"],\
+            ["@types/react", "npm:18.0.6"],\
+            ["react", "npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-is", [\
         ["npm:16.13.1", {\
           "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",\
@@ -10508,6 +10531,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier-plugin-tailwindcss", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:0.1.10"],\
             ["react", "npm:18.0.0"],\
             ["react-dom", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:18.0.0"],\
+            ["react-icons", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:4.3.1"],\
             ["react-refresh", "npm:0.12.0"],\
             ["react-router-dom", "virtual:8759426af44fb96bff19c8f369df0fc76973313bbed13e46f788bb9b81c7af9c8cc6d2f6dffcdd684a06d5af18ba9f09dd74744e1623b791d53374547040c59f#npm:6.3.0"],\
             ["sass", "npm:1.50.1"],\
