@@ -18,20 +18,20 @@ export default function Footer() {
         </NavLink>
         <NavLink
           to="/resume"
-          className="navbar-link hover:text-black ease-in-out"
+          className="navbar-link hover:text-black transition ease-in-out duration-150"
         >
           <RiQuillPenLine />
         </NavLink>
         <NavLink
           to="/portfolio"
-          className="navbar-link hover:text-black ease-in-out"
+          className="navbar-link hover:text-black transition ease-in-out duration-150"
         >
           <RiLayoutTop2Line />
         </NavLink>
         <a
           href="https://github.com/moquette/"
           target="_blank"
-          className="navbar-link hover:text-black ease-in-out"
+          className="navbar-link hover:text-black transition ease-in-out duration-150"
           rel="noreferrer"
         >
           <RiGithubLine />
@@ -39,7 +39,7 @@ export default function Footer() {
         <a
           href="https://www.linkedin.com/in/jmoquette/"
           target="_blank"
-          className="navbar-link hover:text-black ease-in-out"
+          className="navbar-link hover:text-black transition ease-in-out duration-150"
           rel="noreferrer"
         >
           <RiLinkedinLine />
@@ -47,13 +47,13 @@ export default function Footer() {
         <a
           href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
           target="_blank"
-          className="navbar-link hover:text-black ease-in-out"
+          className="navbar-link hover:text-black transition ease-in-out duration-150"
           rel="noreferrer"
         >
           <RiMailLine />
         </a>
       </div>
-      <p className="copyrightx">
+      <p className="copyright">
         Simple-Shell
         <br />
         Copyright &copy;{new Date().getFullYear()} Joaquin A. Moquette
