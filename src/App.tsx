@@ -35,7 +35,7 @@ export default function App() {
     <Router>
       <ScrollToTop>
         <main className="main">
-          <div className="container mx-auto p-5 sm:px-2">
+          <div className="container mx-auto py-5 px-12 ">
             <Routes>
               <Route path="*" element={<PageNotFound />} />
               <Route path="/" element={<Home />} />

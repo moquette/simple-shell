@@ -1,8 +1,8 @@
 .popover {
-  @apply fixed  right-5 top-7;
+  @apply fixed  top-5 right-10 md:hidden;
 
   .popover-button {
-    @apply rounded-lg bg-white ring-1 ring-gray-300 p-2 transition  duration-150 ease-in-out focus:outline-none;
+    @apply relative rounded-lg  transition  duration-150 ease-in-out focus:outline-none;
   }
 
   .popover-panel {

@@ -12,11 +12,18 @@ import {
 
 export default function Nav() {
   return (
-    <Popover className="popover md:right-15 lg:right-20">
+    <Popover className="popover">
       {({open}) => (
         <>
+          <Popover.Overlay
+            className={`${
+              open
+                ? 'fixed inset-0 backdrop-filter backdrop-blur-sm bg-opacity-10'
+                : 'opacity-0'
+            } bg-white`}
+          />
           <Popover.Button
-            className={`popover-button ${open ? `` : `rotate-90 transform`}`}
+            className={`popover-button ${open ? `` : `rotate-90 transform `}`}
           >
             <svg width="24" height="24" fill="none" aria-hidden="true">
               <path
