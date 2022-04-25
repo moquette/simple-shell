@@ -76,11 +76,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="copyright">
-        Simple-Shell
-        <br />
-        Copyright &copy;{new Date().getFullYear()} Joaquin A. Moquette
-        <br />
-        All Rights Reserved.
+        Copyright &copy;{new Date().getFullYear()} J. A. Moquette
       </p>
     </footer>
   )

@@ -10,10 +10,15 @@ import {
   RiMailLine,
 } from 'react-icons/ri'
 
-export default function Nav() {
+export interface IAppProps {
+  className?: string
+}
+export default function Nav(props: IAppProps) {
   return (
     <>
-      <nav className="hidden w-full md:block pt-3">
+      <nav
+        className={`full-page hidden w-full md:block pt-3 ${props.className}`}
+      >
         <ul className="flex flex-row justify-end space-x-3 text-sm">
           <NavLink to="/" className="navbar-link">
             Home
