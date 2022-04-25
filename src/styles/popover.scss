@@ -16,7 +16,7 @@
     .navbar-link {
       @apply w-full rounded-lg p-2 font-bold transition ease-in-out duration-150 text-lg;
       &.active {
-        @apply bg-black text-white;
+        @apply bg-gray-600 text-white;
       }
       &:hover:not(.active) {
         @apply bg-gray-100 text-black;

@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
-import {Popover} from '@headlessui/react'
+import {Popover, Transition} from '@headlessui/react'
 import {
   RiHome2Line,
   RiQuillPenLine,
@@ -25,60 +25,70 @@ export default function Nav() {
               />
             </svg>
           </Popover.Button>
-          <Popover.Panel className="popover-panel">
-            <div className="wrapper">
-              <div>
-                <Popover.Button as={NavLink} to="/" className="navbar-link">
-                  <RiHome2Line className="inline-block ml-2 mr-5 text-3xl" />
-                  Home
-                </Popover.Button>
-                <Popover.Button
-                  as={NavLink}
-                  to="/resume"
-                  className="navbar-link"
-                >
-                  <RiQuillPenLine className="inline-block ml-2 mr-5 text-3xl" />
-                  Resume
-                </Popover.Button>
-                <Popover.Button
-                  as={NavLink}
-                  to="/portfolio"
-                  className="navbar-link"
-                >
-                  <RiLayoutTop2Line className="inline-block ml-2 mr-5 text-3xl" />
-                  Portfolio
-                </Popover.Button>
-                <hr />
-                <a
-                  href="https://github.com/moquette/"
-                  target="_blank"
-                  className="navbar-link"
-                  rel="noreferrer"
-                >
-                  <RiGithubLine className="inline-block ml-2 mr-5 text-3xl" />
-                  GitHub
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/jmoquette/"
-                  target="_blank"
-                  className="navbar-link"
-                  rel="noreferrer"
-                >
-                  <RiLinkedinLine className="inline-block ml-2 mr-5 text-3xl" />
-                  LinkedIn
-                </a>
-                <a
-                  href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
-                  target="_blank"
-                  className="navbar-link"
-                  rel="noreferrer"
-                >
-                  <RiMailLine className="inline-block ml-2 mr-5 text-3xl" />
-                  Contact
-                </a>
+          <Transition
+            as={Fragment}
+            enter="transition ease-out duration-250"
+            enterFrom="opacity-0 translate-y-1"
+            enterTo="opacity-100 translate-y-0"
+            leave="transition ease-in duration-250"
+            leaveFrom="opacity-100 translate-y-0"
+            leaveTo="opacity-0 translate-y-1"
+          >
+            <Popover.Panel className="popover-panel">
+              <div className="wrapper">
+                <div>
+                  <Popover.Button as={NavLink} to="/" className="navbar-link">
+                    <RiHome2Line className="inline-block ml-2 mr-5 text-3xl" />
+                    Home
+                  </Popover.Button>
+                  <Popover.Button
+                    as={NavLink}
+                    to="/resume"
+                    className="navbar-link"
+                  >
+                    <RiQuillPenLine className="inline-block ml-2 mr-5 text-3xl" />
+                    Resume
+                  </Popover.Button>
+                  <Popover.Button
+                    as={NavLink}
+                    to="/portfolio"
+                    className="navbar-link"
+                  >
+                    <RiLayoutTop2Line className="inline-block ml-2 mr-5 text-3xl" />
+                    Portfolio
+                  </Popover.Button>
+                  <hr />
+                  <a
+                    href="https://github.com/moquette/"
+                    target="_blank"
+                    className="navbar-link"
+                    rel="noreferrer"
+                  >
+                    <RiGithubLine className="inline-block ml-2 mr-5 text-3xl" />
+                    GitHub
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/jmoquette/"
+                    target="_blank"
+                    className="navbar-link"
+                    rel="noreferrer"
+                  >
+                    <RiLinkedinLine className="inline-block ml-2 mr-5 text-3xl" />
+                    LinkedIn
+                  </a>
+                  <a
+                    href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
+                    target="_blank"
+                    className="navbar-link"
+                    rel="noreferrer"
+                  >
+                    <RiMailLine className="inline-block ml-2 mr-5 text-3xl" />
+                    Contact
+                  </a>
+                </div>
               </div>
-            </div>
-          </Popover.Panel>
+            </Popover.Panel>
+          </Transition>
         </>
       )}
     </Popover>
