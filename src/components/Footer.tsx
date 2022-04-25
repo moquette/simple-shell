@@ -12,20 +12,26 @@ import {
 export default function Footer() {
   return (
     <footer>
-      <div className="flex flex-row items-center justify-center mt-5 mb-14 text-4xl space-x-5">
-        <NavLink to="/" className="navbar-link">
+      <div className="flex flex-row items-center justify-center mt-5 mb-14 text-4xl space-x-5 text-gray-400">
+        <NavLink to="/" className="navbar-link hover:text-black">
           <RiHome2Line />
         </NavLink>
-        <NavLink to="/resume" className="navbar-link">
+        <NavLink
+          to="/resume"
+          className="navbar-link hover:text-black ease-in-out"
+        >
           <RiQuillPenLine />
         </NavLink>
-        <NavLink to="/portfolio" className="navbar-link">
+        <NavLink
+          to="/portfolio"
+          className="navbar-link hover:text-black ease-in-out"
+        >
           <RiLayoutTop2Line />
         </NavLink>
         <a
           href="https://github.com/moquette/"
           target="_blank"
-          className="navbar-link"
+          className="navbar-link hover:text-black ease-in-out"
           rel="noreferrer"
         >
           <RiGithubLine />
@@ -33,7 +39,7 @@ export default function Footer() {
         <a
           href="https://www.linkedin.com/in/jmoquette/"
           target="_blank"
-          className="navbar-link"
+          className="navbar-link hover:text-black ease-in-out"
           rel="noreferrer"
         >
           <RiLinkedinLine />
@@ -41,7 +47,7 @@ export default function Footer() {
         <a
           href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
           target="_blank"
-          className="navbar-link"
+          className="navbar-link hover:text-black ease-in-out"
           rel="noreferrer"
         >
           <RiMailLine />
@@ -49,7 +55,7 @@ export default function Footer() {
       </div>
       <h6>Simple-Shell</h6>
       <p className="text-sm text-center pt-0 pb-10">
-        <span className="text-gray-400">
+        <span>
           Copyright &copy;{new Date().getFullYear()} Joaquin A. Moquette
           <br />
           All Rights Reserved.

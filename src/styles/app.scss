@@ -28,7 +28,15 @@
 }
 
 footer {
+  @apply text-gray-400;
   h6 {
     @apply text-xl font-bold text-center;
+  }
+}
+
+.home {
+  @apply flex flex-col align-middle justify-center min-h-screen text-center;
+  p {
+    @apply pb-20 text-gray-400;
   }
 }
