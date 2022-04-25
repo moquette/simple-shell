@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom'
+import {RiLinkedinLine, RiGithubLine, RiMailLine} from 'react-icons/ri'
+import ScrollToTop from '@/components/ScrollToTop'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-import ScrollToTop from '@/components/ScrollToTop'
 import Home from '@/pages/Home'
 import Resume from '@/pages/Resume'
 import Portfolio from '@/pages/Portfolio'
@@ -36,6 +37,7 @@ export default function App() {
       <ScrollToTop>
         <main className="main">
           <div className="container mx-auto py-5 px-12 ">
+            <Nav />
             <Routes>
               <Route path="*" element={<PageNotFound />} />
               <Route path="/" element={<Home />} />
@@ -45,7 +47,6 @@ export default function App() {
           </div>
         </main>
         <Footer />
-        <Nav />
       </ScrollToTop>
     </Router>
   )
