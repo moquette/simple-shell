@@ -5,7 +5,7 @@ import {RiLinkedinLine, RiGithubLine, RiMailLine} from 'react-icons/ri'
 export default function Home() {
   return (
     <>
-      <nav className="hidden w-full md:block">
+      <nav className="hidden w-full md:block pt-3">
         <ul className="flex flex-row justify-end space-x-3 text-sm">
           <NavLink to="/" className="navbar-link">
             Home
