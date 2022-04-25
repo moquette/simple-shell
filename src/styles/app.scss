@@ -1,42 +1,34 @@
 @layer base {
   body {
-    font-family: Inter, sans-serif;
-    @apply antialiased animate-fadeIn m-0 p-0;
+    @apply font-sans antialiased animate-fadeIn m-0 p-0 text-gray-500 bg-gray-100;
   }
-  h2 {
-    @apply text-4xl py-2 font-black;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-4xl py-2 font-black text-gray-600;
   }
 
   p {
-    @apply text-xl py-5;
+    @apply py-5 leading-relaxed;
   }
-}
-
-#root {
-  @apply bg-gray-100;
 }
 
 .main {
-  box-shadow: 0px 54px 47px -1px rgba(0, 0, 0, 0.35);
-  transition-duration: 0.8s;
-  background-color: #fff;
+  @apply shadow-2xl duration-1000 ease-in-out bg-white;
 }
 
 .end-of-page {
-  transform: scale(0.94);
-  border-radius: 1rem;
-}
-
-footer {
-  @apply text-gray-400;
-  h6 {
-    @apply text-xl font-bold text-center;
-  }
+  @apply scale-[0.9] rounded-2xl;
 }
 
 .home {
   @apply flex flex-col align-middle justify-center min-h-screen text-center;
   p {
-    @apply pb-20 text-gray-400;
+    @apply pb-20;
   }
+}
+.copyright {
+  @apply text-sm text-center pt-0 pb-10;
 }

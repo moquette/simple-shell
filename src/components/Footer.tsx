@@ -53,13 +53,12 @@ export default function Footer() {
           <RiMailLine />
         </a>
       </div>
-      <h6>Simple-Shell</h6>
-      <p className="text-sm text-center pt-0 pb-10">
-        <span>
-          Copyright &copy;{new Date().getFullYear()} Joaquin A. Moquette
-          <br />
-          All Rights Reserved.
-        </span>
+      <p className="copyrightx">
+        Simple-Shell
+        <br />
+        Copyright &copy;{new Date().getFullYear()} Joaquin A. Moquette
+        <br />
+        All Rights Reserved.
       </p>
     </footer>
   )
