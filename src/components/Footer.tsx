@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
         <div>
           <a
-            href="#top"
+            href="#root"
             rel="noreferrer"
             onClick={() => {
               window.scrollTo(0, 0)

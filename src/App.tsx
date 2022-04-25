@@ -22,7 +22,7 @@ export default function App() {
 
   setTimeout(() => {
     if (
-      window.innerHeight + Math.ceil(window.pageYOffset) + 250 >=
+      window.innerHeight + Math.ceil(window.pageYOffset) + 200 >=
       document.body.offsetHeight
     ) {
       // Trigger the animation

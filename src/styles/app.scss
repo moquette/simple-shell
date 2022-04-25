@@ -19,31 +19,31 @@
   @apply shadow-2xl duration-1000 ease-in-out bg-white;
 }
 
-.end-of-page {
-  @apply scale-[0.9] rounded-2xl;
-}
-
 .home {
-  @apply flex flex-col align-middle justify-center min-h-screen text-center;
+  @apply flex flex-col align-middle justify-center h-screen min-h-screen text-center;
   p {
-    @apply pb-20;
+    @apply mt-[-80px];
   }
 }
 .copyright {
-  @apply text-sm text-center pt-0 pb-20;
+  @apply text-sm text-center py-10;
 }
 
 footer {
   .icon-box {
-    @apply container flex flex-wrap my-20 max-w-lg mx-auto justify-center text-center text-sm text-gray-400;
+    @apply container flex flex-wrap  max-w-sm mx-auto justify-center text-center text-sm text-gray-400;
     div {
       @apply w-1/3 mb-4;
     }
     svg {
-      @apply w-full text-5xl;
+      @apply w-full text-3xl;
     }
     a:hover {
       @apply text-black;
     }
   }
+}
+
+.end-of-page {
+  @apply scale-[0.925] rounded-2xl;
 }
