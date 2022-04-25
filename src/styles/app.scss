@@ -30,5 +30,13 @@
   }
 }
 .copyright {
-  @apply text-sm text-center pt-0 pb-10;
+  @apply text-sm text-center pt-0 pb-20;
+}
+
+footer {
+  .icons {
+    svg {
+      @apply w-full;
+    }
+  }
 }
