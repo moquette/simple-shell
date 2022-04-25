@@ -5,11 +5,39 @@ import {
   RiHome2Line,
   RiQuillPenLine,
   RiLayoutTop2Line,
-  RiLinkedinLine,
   RiGithubLine,
+  RiLinkedinLine,
   RiMailLine,
 } from 'react-icons/ri'
 
+const menuItems = [
+  {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
+  {label: 'Resume', path: '/resume', icon: <RiQuillPenLine />, internal: true},
+  {
+    label: 'Portfolio',
+    path: '/portfolio',
+    icon: <RiLayoutTop2Line />,
+    internal: true,
+  },
+  {
+    label: 'GitHub',
+    path: 'https://github.com/moquette/',
+    icon: <RiGithubLine />,
+    internal: false,
+  },
+  {
+    label: 'LinkedIn',
+    path: 'https://www.linkedin.com/in/jmoquette/',
+    icon: <RiLinkedinLine />,
+    internal: false,
+  },
+  {
+    label: 'Contact',
+    path: "mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk",
+    icon: <RiMailLine />,
+    internal: false,
+  },
+]
 export interface IAppProps {
   className?: string
 }
@@ -20,39 +48,26 @@ export default function Nav(props: IAppProps) {
         className={`full-page hidden w-full md:block pt-3 ${props.className}`}
       >
         <ul className="flex flex-row justify-end space-x-3 text-sm">
-          <NavLink to="/" className="navbar-link">
-            Home
-          </NavLink>
-          <NavLink to="/resume" className="navbar-link">
-            Resume
-          </NavLink>
-          <NavLink to="/portfolio" className="navbar-link">
-            Portfolio
-          </NavLink>
-          <a
-            href="https://github.com/moquette/"
-            target="_blank"
-            className="navbar-link"
-            rel="noreferrer"
-          >
-            <RiGithubLine className="inline-block mb-1" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jmoquette/"
-            target="_blank"
-            className="navbar-link"
-            rel="noreferrer"
-          >
-            <RiLinkedinLine className="inline-block mb-1" />
-          </a>
-          <a
-            href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
-            target="_blank"
-            className="navbar-link"
-            rel="noreferrer"
-          >
-            <RiMailLine className="inline-block mb-1" />
-          </a>
+          {menuItems.map(({label, icon, path, internal}) => {
+            if (internal) {
+              return (
+                <NavLink to={path} className="navbar-link" key={label}>
+                  {label}
+                </NavLink>
+              )
+            } else {
+              return (
+                <a
+                  href={path}
+                  target="_blank"
+                  className="inline-block pt-1"
+                  key={label}
+                >
+                  {icon}
+                </a>
+              )
+            }
+          })}
         </ul>
       </nav>
       <Popover className="popover">

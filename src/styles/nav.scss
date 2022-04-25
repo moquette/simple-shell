@@ -28,6 +28,16 @@
   }
 }
 
+.navbar-link {
+  @apply text-gray-400;
+  &.active {
+    @apply text-gray-600;
+  }
+  &:hover:not(.active) {
+    @apply text-gray-500;
+  }
+}
+
 nav.bottom {
   @apply hidden;
 }

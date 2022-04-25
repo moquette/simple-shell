@@ -7,61 +7,62 @@ import {
   RiLinkedinLine,
   RiGithubLine,
   RiMailLine,
-  RiArrowUpLine,
+  RiArrowUpSLine,
 } from 'react-icons/ri'
 
+const menuItems = [
+  {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
+  {label: 'Resume', path: '/resume', icon: <RiQuillPenLine />, internal: true},
+  {
+    label: 'Portfolio',
+    path: '/portfolio',
+    icon: <RiLayoutTop2Line />,
+    internal: true,
+  },
+  {
+    label: 'GitHub',
+    path: 'https://github.com/moquette/',
+    icon: <RiGithubLine />,
+    internal: false,
+  },
+  {
+    label: 'LinkedIn',
+    path: 'https://www.linkedin.com/in/jmoquette/',
+    icon: <RiLinkedinLine />,
+    internal: false,
+  },
+  {
+    label: 'Contact',
+    path: "mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk",
+    icon: <RiMailLine />,
+    internal: false,
+  },
+]
 export default function Footer() {
   return (
     <footer>
       <div className="icon-box">
-        <div>
-          <NavLink to="/">
-            <RiHome2Line />
-            Home
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/resume">
-            <RiQuillPenLine />
-            Resume
-          </NavLink>
-        </div>
-        <div>
-          <NavLink to="/portfolio">
-            <RiLayoutTop2Line />
-            Portfolio
-          </NavLink>
-        </div>
-        <div>
-          <a
-            href="https://github.com/moquette/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <RiGithubLine />
-            GitHub
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/jmoquette/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <RiLinkedinLine />
-            LinkedIn
-          </a>
-        </div>
-        <div>
-          <a
-            href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <RiMailLine />
-            Contact
-          </a>
-        </div>
+        {menuItems.map(({label, icon, path, internal}) => {
+          if (internal) {
+            return (
+              <div key={label}>
+                <NavLink to={path}>
+                  {icon}
+                  {label}
+                </NavLink>
+              </div>
+            )
+          } else {
+            return (
+              <div key={label}>
+                <a href={path} target="_blank" rel="noreferrer">
+                  {icon}
+                  {label}
+                </a>
+              </div>
+            )
+          }
+        })}
         <div>
           <a
             href="#root"
@@ -70,8 +71,8 @@ export default function Footer() {
               window.scrollTo(0, 0)
             }}
           >
-            <RiArrowUpLine />
-            Top of Page
+            <RiArrowUpSLine />
+            Top
           </a>
         </div>
       </div>
