@@ -6,7 +6,7 @@
   }
 
   .popover-panel {
-    @apply absolute left-full z-10 mt-4 w-screen max-w-xs -translate-x-full transform;
+    @apply absolute left-full z-10 mt-4 w-[175px] max-w-xs -translate-x-full transform;
     .wrapper {
       @apply relative overflow-hidden rounded-lg  ring-1 ring-gray-200 shadow-xl;
       > div {
@@ -14,12 +14,15 @@
       }
     }
     .navbar-link {
-      @apply w-full rounded-lg p-2 font-bold transition ease-in-out duration-150 text-lg;
+      @apply w-full rounded-lg px-2 py-1 transition ease-in-out duration-150;
       &.active {
         @apply bg-gray-600 text-white;
       }
       &:hover:not(.active) {
         @apply bg-gray-100 text-black;
+      }
+      svg {
+        @apply text-lg inline-block;
       }
     }
   }
