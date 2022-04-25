@@ -13,69 +13,65 @@ import {
 export default function Footer() {
   return (
     <footer>
-      <div className="icons container flex flex-wrap mt-7 mb-20 max-w-lg mx-auto justify-center align-center text-gray-400">
-        <div className="w-1/3 mb-4 text-center">
-          <NavLink to="/" className="hover:text-black">
-            <RiHome2Line className="text-5xl" />
-            <span className="text-sm">Home</span>
+      <div className="icon-box">
+        <div>
+          <NavLink to="/">
+            <RiHome2Line />
+            Home
           </NavLink>
         </div>
-        <div className="w-1/3 mb-4 text-center">
-          <NavLink to="/resume" className="hover:text-black">
-            <RiQuillPenLine className="text-5xl" />
-            <span className="text-sm">Resume</span>
+        <div>
+          <NavLink to="/resume">
+            <RiQuillPenLine />
+            Resume
           </NavLink>
         </div>
-        <div className="w-1/3 mb-4 text-center">
-          <NavLink to="/portfolio" className="hover:text-black">
-            <RiLayoutTop2Line className="text-5xl" />
-            <span className="text-sm">Portfolio</span>
+        <div>
+          <NavLink to="/portfolio">
+            <RiLayoutTop2Line />
+            Portfolio
           </NavLink>
         </div>
-        <div className="w-1/3 mb-4 text-center">
+        <div>
           <a
             href="https://github.com/moquette/"
             target="_blank"
-            className="hover:text-black"
             rel="noreferrer"
           >
-            <RiGithubLine className="text-5xl" />
-            <span className="text-sm">GitHub</span>
+            <RiGithubLine />
+            GitHub
           </a>
         </div>
-        <div className="w-1/3 mb-4 text-center">
+        <div>
           <a
             href="https://www.linkedin.com/in/jmoquette/"
             target="_blank"
-            className="hover:text-black"
             rel="noreferrer"
           >
-            <RiLinkedinLine className="text-5xl" />
-            <span className="text-sm">LinkedIn</span>
+            <RiLinkedinLine />
+            LinkedIn
           </a>
         </div>
-        <div className="w-1/3 mb-4 text-center">
+        <div>
           <a
             href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
             target="_blank"
-            className="hover:text-black"
             rel="noreferrer"
           >
-            <RiMailLine className="text-5xl" />
-            <span className="text-sm">Contact</span>
+            <RiMailLine />
+            Contact
           </a>
         </div>
-        <div className="mb-4 mt-6 text-center justify-center">
+        <div>
           <a
             href="#top"
-            className="hover:text-black text-center"
             rel="noreferrer"
             onClick={() => {
               window.scrollTo(0, 0)
             }}
           >
-            <RiArrowUpLine className="text-5xl" />
-            <span className="text-sm">Top of Page</span>
+            <RiArrowUpLine />
+            Top of Page
           </a>
         </div>
       </div>
