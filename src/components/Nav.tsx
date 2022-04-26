@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
 import {Popover, Transition} from '@headlessui/react'
+import AppLink from '@/components/AppLink'
 import {
   RiHome2Line,
   RiQuillPenLine,
@@ -10,34 +11,6 @@ import {
   RiMailLine,
 } from 'react-icons/ri'
 
-const menuItems = [
-  {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
-  {label: 'Resume', path: '/resume', icon: <RiQuillPenLine />, internal: true},
-  {
-    label: 'Portfolio',
-    path: '/portfolio',
-    icon: <RiLayoutTop2Line />,
-    internal: true,
-  },
-  {
-    label: 'GitHub',
-    path: 'https://github.com/moquette/',
-    icon: <RiGithubLine />,
-    internal: false,
-  },
-  {
-    label: 'LinkedIn',
-    path: 'https://www.linkedin.com/in/jmoquette/',
-    icon: <RiLinkedinLine />,
-    internal: false,
-  },
-  {
-    label: 'Contact',
-    path: "mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk",
-    icon: <RiMailLine />,
-    internal: false,
-  },
-]
 export interface IAppProps {
   className?: string
 }
@@ -48,26 +21,18 @@ export default function Nav(props: IAppProps) {
         className={`full-page hidden w-full md:block pt-3 ${props.className}`}
       >
         <ul className="flex flex-row justify-end space-x-3 text-sm">
-          {menuItems.map(({label, icon, path, internal}) => {
-            if (internal) {
-              return (
-                <NavLink to={path} className="navbar-link" key={label}>
-                  {label}
-                </NavLink>
-              )
-            } else {
-              return (
-                <a
-                  href={path}
-                  target="_blank"
-                  className="inline-block pt-1"
-                  key={label}
-                >
-                  {icon}
-                </a>
-              )
-            }
-          })}
+          <AppLink internal="/">Home</AppLink>
+          <AppLink internal="/resume">Resume</AppLink>
+          <AppLink internal="/portfolio">Portfolio</AppLink>
+          <AppLink external="https://github.com/moquette/">
+            <RiGithubLine />
+          </AppLink>
+          <AppLink external="https://www.linkedin.com/in/jmoquette/">
+            <RiLinkedinLine />
+          </AppLink>
+          <AppLink external="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk">
+            <RiMailLine />
+          </AppLink>
         </ul>
       </nav>
       <Popover className="popover">
