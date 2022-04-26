@@ -11,6 +11,11 @@
   h6 {
     @apply text-4xl py-2 font-black text-gray-600;
   }
+  h2 {
+    font-family: 'Oooh Baby', cursive;
+    @apply text-6xl;
+  }
+
   .cursive {
     @apply font-family: 'Oooh Baby', cursive;
   }
