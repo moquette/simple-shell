@@ -19,9 +19,11 @@ export default function Nav(props: IAppProps) {
     <>
       <nav className={`${props.className} full-page  w-full pt-3 md:block`}>
         <div className="flex flex-row justify-between">
-          <AppLink internal="/">Joaquin A. Moquette</AppLink>
+          <AppLink internal="/" className="nav-title md:block hidden">
+            Joaquin A. Moquette
+          </AppLink>
 
-          <ul className=" space-x-3 md:inline-flex hidden">
+          <ul className="space-x-3 md:inline-flex hidden">
             <li>
               <AppLink internal="/resume">Resume</AppLink>
             </li>

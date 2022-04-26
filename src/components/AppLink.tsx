@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 
-export default function AppLink(props) {
+export default function Link(props) {
   if (props.internal) {
     return (
       <NavLink to={props.internal} className={`navbar-link ${props.className}`}>
