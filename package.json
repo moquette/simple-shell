@@ -15,9 +15,9 @@
   "scripts": {
     "dev": "webpack-cli serve --mode=development --env development",
     "build": "webpack --mode=production --env production --progress",
+    "format": "prettier './src/**/*.{js,jsx,ts,tsx,json,scss,css,md,html}' --write",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --quiet --fix",
-    "format": "prettier './src/**/*.{js,jsx,ts,tsx,json,scss,css,md,html}' --write",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

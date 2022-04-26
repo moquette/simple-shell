@@ -2,7 +2,6 @@ import React from 'react'
 import Link from '@/components/AppLink'
 
 import {
-  RiHome2Line,
   RiQuillPenLine,
   RiLayoutTop2Line,
   RiGithubLine,
@@ -10,7 +9,7 @@ import {
   RiMailLine,
 } from 'react-icons/ri'
 
-export default function IconBar(props) {
+export default function IconBar() {
   return (
     <ul className="flex content-center justify-center space-x-4 text-2xl md:hidden">
       <li>
