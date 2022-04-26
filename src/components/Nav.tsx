@@ -41,7 +41,7 @@ export default function Nav(props: IAppProps) {
             <Popover.Overlay
               className={`${
                 open
-                  ? 'fixed inset-0 backdrop-filter backdrop-blur-sm bg-opacity-10'
+                  ? 'fixed inset-0 backdrop-filter backdrop-blur-[2px] bg-opacity-10'
                   : 'opacity-0'
               } bg-white`}
             />

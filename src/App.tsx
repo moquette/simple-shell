@@ -26,17 +26,17 @@ export default function App() {
       document.body.offsetHeight
     ) {
       // Trigger the animation
-      document.querySelector('.main').classList.add('end-of-page')
+      document.querySelector('main').classList.add('end-of-page-animation')
     } else {
-      document.querySelector('.main').classList.remove('end-of-page')
+      document.querySelector('main').classList.remove('end-of-page-animation')
     }
   }, 0)
   return (
     <Router>
       <ScrollToTop>
-        <main className="main">
-          <div className="container mx-auto py-5 px-12 ">
-            <Nav className="top" />
+        <main>
+          <div className="container">
+            <Nav />
             <Routes>
               <Route path="*" element={<PageNotFound />} />
               <Route path="/" element={<Home />} />

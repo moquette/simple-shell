@@ -2,58 +2,176 @@ import React from 'react'
 
 export default function Resume() {
   return (
-    <main>
+    <div className="page resume">
       <h2>Resume</h2>
-      <p>
-        Accumsan tortor posuere ac ut consequat semper viverra nam. Dolor magna
-        eget est lorem ipsum dolor sit amet. Amet justo donec enim diam
-        vulputate ut. Eget aliquet nibh praesent tristique magna sit amet purus.
-        Amet cursus sit amet dictum sit amet justo donec enim. Elit ullamcorper
-        dignissim cras tincidunt lobortis feugiat vivamus at. Nibh praesent
-        tristique magna sit. Ornare aenean euismod elementum nisi. Egestas diam
-        in arcu cursus euismod quis viverra nibh. Turpis egestas integer eget
-        aliquet nibh praesent tristique magna. Diam in arcu cursus euismod quis
-        viverra. Fermentum et sollicitudin ac orci. Adipiscing tristique risus
-        nec feugiat in fermentum posuere urna. Imperdiet nulla malesuada
-        pellentesque elit eget gravida. Adipiscing commodo elit at imperdiet dui
-        accumsan. Condimentum id venenatis a condimentum vitae. Pharetra diam
-        sit amet nisl.
-      </p>
-      <p>
-        Sagittis purus sit amet volutpat consequat mauris nunc congue nisi.
-        Porttitor leo a diam sollicitudin tempor id eu nisl. Justo nec ultrices
-        dui sapien eget mi proin sed. Neque aliquam vestibulum morbi blandit.
-        Vitae tempus quam pellentesque nec nam. Diam volutpat commodo sed
-        egestas egestas fringilla phasellus faucibus scelerisque. Volutpat est
-        velit egestas dui id. Ut lectus arcu bibendum at varius vel. Aliquam
-        faucibus purus in massa tempor. Consectetur libero id faucibus nisl
-        tincidunt eget nullam non nisi. Feugiat vivamus at augue eget arcu.
-        Netus et malesuada fames ac turpis egestas sed. Egestas erat imperdiet
-        sed euismod nisi porta lorem. At auctor urna nunc id cursus metus
-        aliquam eleifend. Sit amet nisl purus in mollis nunc sed. Enim eu turpis
-        egestas pretium aenean pharetra magna ac placerat.
-      </p>
-      <p>
-        Risus nec feugiat in fermentum posuere urna. Pharetra pharetra massa
-        massa ultricies. Quis lectus nulla at volutpat diam ut venenatis tellus.
-        Eu augue ut lectus arcu. Egestas purus viverra accumsan in. Lectus
-        vestibulum mattis ullamcorper velit sed ullamcorper morbi. Cras sed
-        felis eget velit aliquet. Sit amet justo donec enim diam vulputate ut
-        pharetra. Purus in massa tempor nec feugiat nisl. Arcu cursus euismod
-        quis viverra nibh cras.
-      </p>
-      <p>
-        Fusce ut placerat orci nulla pellentesque dignissim. Euismod lacinia at
-        quis risus sed vulputate odio. Morbi tristique senectus et netus et
-        malesuada. Vel orci porta non pulvinar neque. Viverra mauris in aliquam
-        sem fringilla ut morbi tincidunt. Odio morbi quis commodo odio. Ultrices
-        tincidunt arcu non sodales neque sodales. Montes nascetur ridiculus mus
-        mauris vitae. Sit amet venenatis urna cursus eget nunc scelerisque
-        viverra mauris. Tempus urna et pharetra pharetra massa massa.
-        Scelerisque felis imperdiet proin fermentum leo vel. Habitasse platea
-        dictumst vestibulum rhoncus est pellentesque. Condimentum lacinia quis
-        vel eros donec. Urna molestie at elementum eu facilisis sed odio.
-      </p>
-    </main>
+      <div>
+        <h3>Joaquin A. Moquette</h3>
+        <p>
+          Entrepreneurial self-starter with extraordinary problem-solving
+          skills. Enjoys creating powerful applications, rich user experiences
+          and solving complex design problems with dead-simple code.
+        </p>
+      </div>
+      <div>
+        <h3>Experience</h3>
+        <div>
+          <div>
+            <p>Principal Developer / Designer</p>
+            <p>
+              2017 to Present
+              <br />
+              Dovergence
+            </p>
+          </div>
+
+          <p>
+            Principal application developer/designer of cloud-based applications
+            and backend development, implementation of automated processes, QA
+            testing, data maintenance and migration of applications, APIs and
+            integration of third-party open-source solutions and services.
+          </p>
+          <p>
+            Meet with the clients and stakeholders to understand requirements,
+            discuss solutions, and provide detailed progress updates. Facilitate
+            the uptake of client solutions with training of tools, techniques,
+            and suggestions.
+          </p>
+        </div>
+        <div>
+          <div>
+            <p>Principal UX Developer</p>
+            <p>
+              2004 to 2017
+              <br />
+              Oracle, Inc
+            </p>
+          </div>
+          <p>
+            Managed, evaluated, and created solutions for consumer and
+            enterprise web applications. This included the iterative design of
+            mockups and functional prototypes for both end-user and technical
+            evaluation, the evaluation and testing of new architectures, web and
+            cloud technologies, features, and services.
+          </p>
+          <p>
+            Created, designed, and enhanced publishing platforms and tools for
+            rapid development and delivery of content. Contributed, reviewed,
+            authored, and communicated pattern and coding standards and
+            guidelines. Was the &apos;Go to&apos; person for insight and
+            knowledge on tools and techniques within the organization, including
+            mentoring junior employees and services.
+          </p>
+        </div>
+        <div>
+          <div>
+            <p>Sr. Web Developer</p>
+            <p>
+              2002 to 2004
+              <br />
+              McAfee
+            </p>
+          </div>
+          <p>
+            Supported the design and implementation of the consumer-facing
+            McAfee.com and business intranet portals. This included the analysis
+            of corporate architecture needs and design creation and
+            implementation.
+          </p>
+          <p>
+            Designed a web interface for &apos;Virus Center,&apos; an external
+            application that allowed consumers to look up and track viruses,
+            origins, and solutions. Created user experience design solutions for
+            e-commerce project managers and data mining specialists to increase
+            conversion rates, including updates, upgrades, and overall
+            maintenance of the website.
+          </p>
+        </div>
+        <div>
+          <div>
+            <p>Developer / UI Designer</p>
+            <p>
+              1996 to 2002
+              <br />
+              Siemens
+            </p>
+          </div>
+          <p>
+            Developer, designer and support member of a multimillion enterprise
+            call center software acquisition.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3>Skills</h3>
+        <ul className="flow-root pb-5">
+          <li className="pill">Apache</li>
+          <li className="pill">API</li>
+          <li className="pill">AWS</li>
+          <li className="pill">Bootstrap</li>
+          <li className="pill">Cloudflare</li>
+          <li className="pill">CSS</li>
+          <li className="pill">Design Systems</li>
+          <li className="pill">ES6/7</li>
+          <li className="pill">Express</li>
+          <li className="pill">Git</li>
+          <li className="pill">GitHub Pages</li>
+          <li className="pill">Grunt</li>
+          <li className="pill">Gulp</li>
+          <li className="pill">HTML 5</li>
+          <li className="pill">jQuery</li>
+          <li className="pill">Netlify</li>
+          <li className="pill">NextJS</li>
+          <li className="pill">PHP</li>
+          <li className="pill">React</li>
+          <li className="pill">Redux</li>
+          <li className="pill">REST</li>
+          <li className="pill">SASS</li>
+          <li className="pill">Snowpack</li>
+          <li className="pill">Stripe</li>
+          <li className="pill">Styled Components</li>
+          <li className="pill">Tailwind</li>
+          <li className="pill">Tooling</li>
+          <li className="pill">Vercel</li>
+          <li className="pill">Vite</li>
+          <li className="pill">Webpack</li>
+          <li className="pill">Wordpress</li>
+          <li className="pill">XML</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <div>
+          <div>
+            <p>
+              Harbor College
+              <br />
+              Programming / Business Administration
+              <br />
+              Los Angeles, CA / 1996
+            </p>
+          </div>
+          <div>
+            <p>
+              Hawthorne HS
+              <br />
+              Information Technology
+              <br />
+              Hawthorne, CA / 1986
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>
+          <a
+            href="https://docs.google.com/document/d/1pSviiXAwTSFYCvvsoMeR4P2lOY5Ycmy9KmkQrD0wftc/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download Resume
+          </a>
+        </p>
+      </div>
+    </div>
   )
 }

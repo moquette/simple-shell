@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Portfolio() {
   return (
-    <main>
+    <div className="page portfolio">
       <h2>Portfolio</h2>
       <p>
         Sagittis purus sit amet volutpat consequat mauris nunc congue nisi.
@@ -64,6 +64,6 @@ export default function Portfolio() {
         accumsan. Condimentum id venenatis a condimentum vitae. Pharetra diam
         sit amet nisl.
       </p>{' '}
-    </main>
+    </div>
   )
 }
