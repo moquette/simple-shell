@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
 @layer base {
   body {
     @apply font-sans antialiased animate-fadeIn m-0 p-0 text-gray-500 bg-gray-100;
@@ -8,6 +10,9 @@
   h5,
   h6 {
     @apply text-4xl py-2 font-black text-gray-600;
+  }
+  .cursive {
+    @apply font-family: 'Oooh Baby', cursive;
   }
 
   p {
@@ -22,7 +27,12 @@
 .home {
   @apply flex flex-col align-middle justify-center h-screen min-h-screen text-center;
   p {
-    @apply mt-[-80px];
+    font-family: 'Oooh Baby', cursive;
+    @apply mt-[-80px] text-[20px] leading-loose tracking-wide font-extrabold;
+
+    span {
+      @apply text-4xl;
+    }
   }
 }
 .copyright {

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="home">
       <p>
-        Hello! I&apos;m Joaquin
+        <span>Hello! I&apos;m Joaquin</span>
         <br /> Developer &bull; Designer &bull; Minimalist
       </p>
     </div>
