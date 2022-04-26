@@ -8,13 +8,13 @@
   .popover-panel {
     @apply absolute left-full z-10 mt-4 w-[175px] max-w-xs -translate-x-full transform;
     .wrapper {
-      @apply relative overflow-hidden rounded-lg  ring-1 ring-gray-200 shadow-xl;
+      @apply relative overflow-hidden rounded-lg  shadow-xl ring-1 ring-gray-200;
       > div {
         @apply relative grid gap-2 rounded-lg bg-white p-2;
       }
     }
     .navbar-link {
-      @apply w-full rounded-lg px-2 py-1 transition ease-in-out duration-150;
+      @apply w-full rounded-lg px-2 py-1 transition duration-150 ease-in-out;
       &.active {
         @apply bg-gray-600 text-white;
       }
@@ -22,7 +22,7 @@
         @apply bg-gray-100 text-black;
       }
       svg {
-        @apply text-lg inline-block;
+        @apply inline-block text-lg;
       }
     }
   }

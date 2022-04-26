@@ -18,7 +18,7 @@ export default function Nav(props: IAppProps) {
   return (
     <>
       <nav
-        className={`full-page hidden w-full md:block pt-3 ${props.className}`}
+        className={`full-page hidden w-full pt-3 md:block ${props.className}`}
       >
         <ul className="flex flex-row justify-end space-x-3 text-sm">
           <AppLink internal="/">Home</AppLink>
@@ -41,7 +41,7 @@ export default function Nav(props: IAppProps) {
             <Popover.Overlay
               className={`${
                 open
-                  ? 'fixed inset-0 backdrop-filter backdrop-blur-[2px] bg-opacity-10'
+                  ? 'fixed inset-0 bg-opacity-10 backdrop-blur-[2px] backdrop-filter'
                   : 'opacity-0'
               } bg-white`}
             />
@@ -68,7 +68,7 @@ export default function Nav(props: IAppProps) {
                 <div className="wrapper">
                   <div>
                     <Popover.Button as={NavLink} to="/" className="navbar-link">
-                      <RiHome2Line className="inline-block ml-2 mr-5 text-3xl" />
+                      <RiHome2Line className="ml-2 mr-5 inline-block text-3xl" />
                       Home
                     </Popover.Button>
                     <Popover.Button
@@ -76,7 +76,7 @@ export default function Nav(props: IAppProps) {
                       to="/resume"
                       className="navbar-link"
                     >
-                      <RiQuillPenLine className="inline-block ml-2 mr-5 text-3xl" />
+                      <RiQuillPenLine className="ml-2 mr-5 inline-block text-3xl" />
                       Resume
                     </Popover.Button>
                     <Popover.Button
@@ -84,7 +84,7 @@ export default function Nav(props: IAppProps) {
                       to="/portfolio"
                       className="navbar-link"
                     >
-                      <RiLayoutTop2Line className="inline-block ml-2 mr-5 text-3xl" />
+                      <RiLayoutTop2Line className="ml-2 mr-5 inline-block text-3xl" />
                       Portfolio
                     </Popover.Button>
                     <hr />
@@ -94,7 +94,7 @@ export default function Nav(props: IAppProps) {
                       className="navbar-link"
                       rel="noreferrer"
                     >
-                      <RiGithubLine className="inline-block ml-2 mr-5 text-3xl" />
+                      <RiGithubLine className="ml-2 mr-5 inline-block text-3xl" />
                       GitHub
                     </a>
                     <a
@@ -103,7 +103,7 @@ export default function Nav(props: IAppProps) {
                       className="navbar-link"
                       rel="noreferrer"
                     >
-                      <RiLinkedinLine className="inline-block ml-2 mr-5 text-3xl" />
+                      <RiLinkedinLine className="ml-2 mr-5 inline-block text-3xl" />
                       LinkedIn
                     </a>
                     <a
@@ -112,7 +112,7 @@ export default function Nav(props: IAppProps) {
                       className="navbar-link"
                       rel="noreferrer"
                     >
-                      <RiMailLine className="inline-block ml-2 mr-5 text-3xl" />
+                      <RiMailLine className="ml-2 mr-5 inline-block text-3xl" />
                       Contact
                     </a>
                   </div>

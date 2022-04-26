@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ScrollToTop from '@/components/ScrollToTop'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'

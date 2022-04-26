@@ -13,7 +13,7 @@ export default function AppLink(props) {
     return (
       <a
         href={props.external}
-        className={`navbar-link inline-block pt-1 ...props.className`}
+        className={`navbar-link ...props.className inline-block pt-1`}
         target="_blank"
         rel="noreferrer"
       >

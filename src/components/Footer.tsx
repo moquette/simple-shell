@@ -76,7 +76,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <p className="text-[10px] text-center p-0;">
+      <p className="p-0 text-center text-[10px]">
         Copyright &copy;{new Date().getFullYear()} J. A. Moquette
       </p>
     </footer>

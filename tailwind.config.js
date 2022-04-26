@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  content: ['./src/**/*.{js,jsx,ts,tsx,html}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,html,scss,css}'],
   theme: {
     animation: {
       fadeIn: 'fadeIn .75s ease-in-out',
