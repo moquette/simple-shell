@@ -14,7 +14,7 @@
   }
 
   .container {
-    @apply mx-auto max-w-screen-lg px-10;
+    @apply mx-auto max-w-screen-lg px-5 md:px-10;
   }
   .home {
     @apply flex flex-col align-middle justify-center h-screen min-h-screen text-center;
