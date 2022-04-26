@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 export default function AppLink(props) {
   if (props.internal) {
     return (
-      <NavLink to={props.internal} className={`navbar-link ...props.className`}>
+      <NavLink to={props.internal} className={`navbar-link ${props.className}`}>
         {props.children}
       </NavLink>
     )
@@ -13,7 +13,7 @@ export default function AppLink(props) {
     return (
       <a
         href={props.external}
-        className={`navbar-link ...props.className inline-block pt-1`}
+        className={`navbar-link ${props.className} inline-block pt-1`}
         target="_blank"
         rel="noreferrer"
       >

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Portfolio() {
   return (
-    <div className="page portfolio">
+    <div className="page portfolio pt-7">
       <h2>Portfolio</h2>
       <p>
         Sagittis purus sit amet volutpat consequat mauris nunc congue nisi.

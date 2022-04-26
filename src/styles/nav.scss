@@ -1,12 +1,12 @@
 .popover {
-  @apply fixed  top-7 right-7 md:hidden;
+  @apply fixed  top-3 right-7 md:hidden;
 
   .popover-button {
-    @apply relative rounded-lg  transition  duration-150 ease-in-out focus:outline-none;
+    @apply rounded-lg  transition  duration-150 ease-in-out focus:outline-none;
   }
 
   .popover-panel {
-    @apply absolute left-full z-10 mt-4 w-[175px] max-w-xs -translate-x-full transform;
+    @apply absolute left-full z-10 mt-1 w-[175px] max-w-xs -translate-x-full transform;
     .wrapper {
       @apply relative overflow-hidden rounded-lg  shadow-xl ring-1 ring-gray-200;
       > div {

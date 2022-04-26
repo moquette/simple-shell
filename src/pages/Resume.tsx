@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Resume() {
   return (
-    <div className="page resume">
+    <div className="page resume pt-7">
       <h2>Resume</h2>
       <div>
         <h3>Joaquin A. Moquette</h3>
