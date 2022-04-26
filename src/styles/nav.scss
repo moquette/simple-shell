@@ -29,12 +29,9 @@
 }
 
 .navbar-link {
-  @apply text-gray-400;
+  @apply border-b border-transparent pb-1 text-gray-500;
   &.active {
-    @apply text-gray-600;
-  }
-  &:hover:not(.active) {
-    @apply text-gray-500;
+    @apply border-b border-gray-500 pb-1;
   }
 }
 

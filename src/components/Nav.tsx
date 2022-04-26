@@ -19,30 +19,33 @@ export default function Nav(props: IAppProps) {
     <>
       <nav className={`${props.className} full-page  w-full pt-3 md:block`}>
         <div className="flex flex-row justify-between">
-          <AppLink internal="/" className="nav-title md:block hidden">
+          <AppLink internal="/" className="nav-title hidden md:block">
             Joaquin A. Moquette
           </AppLink>
 
-          <ul className="space-x-3 md:inline-flex hidden">
+          <ul className="hidden space-x-3 md:inline-flex">
             <li>
               <AppLink internal="/resume">Resume</AppLink>
             </li>
             <li>
               <AppLink internal="/portfolio">Portfolio</AppLink>
             </li>
-            <li>
-              <AppLink external="https://github.com/moquette/">
-                <RiGithubLine />
+            <li hidden>
+              <AppLink external="https://github.com/moquette/" className="pt-0">
+                GitHub
+              </AppLink>
+            </li>
+            <li hidden>
+              <AppLink
+                external="https://www.linkedin.com/in/jmoquette/"
+                className="pt-0"
+              >
+                LinkedIn
               </AppLink>
             </li>
             <li>
-              <AppLink external="https://www.linkedin.com/in/jmoquette/">
-                <RiLinkedinLine />
-              </AppLink>
-            </li>
-            <li>
-              <AppLink external="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk">
-                <RiMailLine />
+              <AppLink internal="/contact" className="pt-0">
+                Contact
               </AppLink>
             </li>
           </ul>
@@ -97,6 +100,14 @@ export default function Nav(props: IAppProps) {
                           <RiLayoutTop2Line className="ml-2 mr-5 inline-block text-3xl" />
                           Portfolio
                         </Popover.Button>
+                        <Popover.Button
+                          as={NavLink}
+                          to="/contact"
+                          className="navbar-link"
+                        >
+                          <RiMailLine className="ml-2 mr-5 inline-block text-3xl" />
+                          Contact
+                        </Popover.Button>
                         <hr />
                         <a
                           href="https://github.com/moquette/"
@@ -115,15 +126,6 @@ export default function Nav(props: IAppProps) {
                         >
                           <RiLinkedinLine className="ml-2 mr-5 inline-block text-3xl" />
                           LinkedIn
-                        </a>
-                        <a
-                          href="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk"
-                          target="_blank"
-                          className="navbar-link"
-                          rel="noreferrer"
-                        >
-                          <RiMailLine className="ml-2 mr-5 inline-block text-3xl" />
-                          Contact
                         </a>
                       </div>
                     </div>

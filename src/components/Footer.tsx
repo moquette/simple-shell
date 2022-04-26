@@ -11,12 +11,17 @@ import {
 } from 'react-icons/ri'
 
 const menuItems = [
-  {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
   {label: 'Resume', path: '/resume', icon: <RiQuillPenLine />, internal: true},
   {
     label: 'Portfolio',
     path: '/portfolio',
     icon: <RiLayoutTop2Line />,
+    internal: true,
+  },
+  {
+    label: 'Contact',
+    path: '/contact',
+    icon: <RiMailLine />,
     internal: true,
   },
   {
@@ -31,12 +36,7 @@ const menuItems = [
     icon: <RiLinkedinLine />,
     internal: false,
   },
-  {
-    label: 'Contact',
-    path: "mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk",
-    icon: <RiMailLine />,
-    internal: false,
-  },
+  {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
 ]
 export default function Footer() {
   return (
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="p-0 text-center text-[10px]">
-        Copyright &copy;{new Date().getFullYear()} J. A. Moquette
+        Copyright &copy;{new Date().getFullYear()} &bull; All rights reserved.
       </p>
     </footer>
   )

@@ -1,6 +1,6 @@
 @layer base {
   body {
-    @apply m-0 animate-fadeIn bg-gray-100 p-0 font-sans text-gray-500 antialiased;
+    @apply m-0 animate-fadeIn bg-gray-100 p-0 font-sans text-sm text-gray-500 antialiased;
   }
 
   p {
@@ -9,6 +9,9 @@
 }
 
 @layer components {
+  .page {
+    @apply min-h-screen;
+  }
   main {
     @apply bg-white shadow-2xl duration-500 ease-in-out;
   }
@@ -23,7 +26,7 @@
   footer {
     @apply pb-5 pt-10 text-gray-400;
     .icon-box {
-      @apply container mx-auto flex  max-w-sm flex-wrap justify-center text-center text-sm text-gray-400;
+      @apply container mx-auto flex  max-w-sm flex-wrap justify-center text-center text-gray-400;
       div {
         @apply mb-10 w-1/3;
       }
@@ -36,7 +39,7 @@
     }
   }
   .pill {
-    @apply float-left text-gray-500 tracking-wide text-xs text-center bg-gray-200 rounded-xl py-1 px-4 mr-2 mb-2;
+    @apply float-left mr-2  mb-2 rounded-md  bg-gray-100 px-2 text-center;
   }
 }
 

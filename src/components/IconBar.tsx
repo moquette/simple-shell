@@ -12,7 +12,7 @@ import {
 
 export default function IconBar(props) {
   return (
-    <ul className="flex space-x-4 text-2xl justify-center content-center md:hidden">
+    <ul className="flex content-center justify-center space-x-4 text-2xl md:hidden">
       <li>
         <Link internal="/resume">
           <RiQuillPenLine className="inline-block" />
@@ -24,18 +24,18 @@ export default function IconBar(props) {
         </Link>
       </li>
       <li>
+        <Link internal="/contact">
+          <RiMailLine className="inline-block" />
+        </Link>
+      </li>
+      <li hidden>
         <Link external="https://github.com/moquette/">
           <RiGithubLine />
         </Link>
       </li>
-      <li>
+      <li hidden>
         <Link external="https://www.linkedin.com/in/jmoquette/">
           <RiLinkedinLine />
-        </Link>
-      </li>
-      <li>
-        <Link external="mailto:Joaquin A. Moquette<joaquin@moquette.us>?subject=Let's talk">
-          <RiMailLine />
         </Link>
       </li>
     </ul>
