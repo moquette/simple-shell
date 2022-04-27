@@ -13,28 +13,18 @@ export default function IconBar() {
   return (
     <ul className="flex content-center justify-center space-x-4 text-2xl md:hidden">
       <li>
-        <Link internal="/resume">
+        <Link internal="/resume" className="hover:text-black">
           <RiQuillPenLine className="inline-block" />
         </Link>
       </li>
       <li>
-        <Link internal="/portfolio">
+        <Link internal="/portfolio" className="hover:text-black">
           <RiLayoutTop2Line className="inline-block" />
         </Link>
       </li>
       <li>
-        <Link internal="/contact">
+        <Link internal="/contact" className="hover:text-black">
           <RiMailLine className="inline-block" />
-        </Link>
-      </li>
-      <li hidden>
-        <Link external="https://github.com/moquette/">
-          <RiGithubLine />
-        </Link>
-      </li>
-      <li hidden>
-        <Link external="https://www.linkedin.com/in/jmoquette/">
-          <RiLinkedinLine />
         </Link>
       </li>
     </ul>

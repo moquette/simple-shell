@@ -1,28 +1,33 @@
+/*
+ * TailwindCSS Configuration File
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   body {
-    @apply m-0 animate-fadeIn bg-gray-100 p-0 font-sans text-sm text-gray-500 antialiased;
+    @apply m-0 animate-fadeIn bg-gray-100 p-0 font-sans text-gray-500 antialiased;
   }
 
   p {
-    @apply pb-5 leading-relaxed;
+    @apply pb-5;
   }
 }
 
 @layer components {
-  .page {
-    @apply min-h-screen;
-  }
   main {
     @apply bg-white shadow-2xl duration-500 ease-in-out;
   }
-
   .container {
     @apply mx-auto max-w-screen-lg px-5 md:px-10;
   }
-  .home {
-    @apply flex h-screen min-h-screen flex-col justify-center text-center align-middle;
+  .page {
+    @apply min-h-screen;
+    &.home {
+      @apply flex flex-col justify-center text-center align-middle;
+    }
   }
-
   footer {
     @apply pb-5 pt-10 text-gray-400;
     .icon-box {
@@ -33,13 +38,52 @@
       svg {
         @apply w-full text-2xl;
       }
-      a:hover {
-        @apply text-black;
+      a:hover:not(.active) {
+        @apply text-gray-500;
       }
     }
   }
   .pill {
     @apply float-left mr-2  mb-2 rounded-md  bg-gray-100 px-2 text-center;
+  }
+  .navbar-link {
+    @apply border-b border-transparent pb-1;
+    &.active {
+      @apply border-b border-black pb-1;
+    }
+    &:hover:not(.active) {
+      @apply text-black;
+    }
+  }
+  .popover {
+    @apply fixed  top-3 right-7 md:hidden;
+    .popover-button {
+      @apply rounded-lg  transition  duration-150 ease-in-out focus:outline-none;
+    }
+    .popover-panel {
+      @apply absolute left-full z-10 mt-1 w-[175px] max-w-xs -translate-x-full transform;
+      .wrapper {
+        @apply relative overflow-hidden rounded-lg  shadow-xl ring-1 ring-gray-200;
+        > div {
+          @apply relative grid gap-2 rounded-lg bg-white p-2;
+        }
+      }
+      .navbar-link {
+        @apply w-full rounded-lg px-2 py-1 transition duration-150 ease-in-out;
+        &.active {
+          @apply bg-gray-600 text-white;
+        }
+        &:hover:not(.active) {
+          @apply bg-gray-100 text-black;
+        }
+        svg {
+          @apply inline-block text-lg;
+        }
+      }
+    }
+  }
+  .active {
+    @apply text-black;
   }
 }
 
