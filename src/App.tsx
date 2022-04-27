@@ -10,6 +10,7 @@ import Contact from '@/pages/Contact'
 import PageNotFound from '@/pages/PageNotFound'
 
 export default function App() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [offset, setOffset] = useState(0)
 
   useEffect(() => {

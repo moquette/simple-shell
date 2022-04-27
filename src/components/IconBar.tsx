@@ -1,13 +1,6 @@
 import React from 'react'
 import Link from '@/components/AppLink'
-
-import {
-  RiQuillPenLine,
-  RiLayoutTop2Line,
-  RiGithubLine,
-  RiLinkedinLine,
-  RiMailLine,
-} from 'react-icons/ri'
+import {RiQuillPenLine, RiLayoutTop2Line, RiMailLine} from 'react-icons/ri'
 
 export default function IconBar() {
   return (
