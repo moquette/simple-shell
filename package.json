@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-cli serve --mode=development --env development",
+    "start": "webpack-cli serve --mode=development --env development",
     "build": "yarn typecheck && webpack --mode=production --env production --progress",
     "format": "prettier './src/**/*.{js,jsx,ts,tsx,json,scss,css,md,html}' --write",
     "lint": "eslint './src/**/*.{ts,tsx}'",
