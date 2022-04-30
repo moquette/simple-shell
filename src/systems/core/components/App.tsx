@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import ScrollToTop from '@/components/ScrollToTop'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
+import ScrollToTop from '@/systems/core/components/ScrollToTop'
+import PageNotFound from '@/pages/PageNotFound'
 import Home from '@/pages/Home'
 import Resume from '@/pages/Resume'
 import Portfolio from '@/pages/Portfolio'
 import Contact from '@/pages/Contact'
-import PageNotFound from '@/pages/PageNotFound'
+import '@/styles/app.scss'
 
-export default function App() {
+export const App = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [offset, setOffset] = useState(0)
 
@@ -37,7 +36,6 @@ export default function App() {
       <ScrollToTop>
         <main>
           <div className="container">
-            <Nav />
             <Routes>
               <Route path="*" element={<PageNotFound />} />
               <Route path="/" element={<Home />} />
@@ -47,7 +45,6 @@ export default function App() {
             </Routes>
           </div>
         </main>
-        <Footer />
       </ScrollToTop>
     </Router>
   )
