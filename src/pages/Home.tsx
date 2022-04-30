@@ -4,7 +4,7 @@ import {IconBar} from '@/systems/core'
 
 export default function Home() {
   return (
-    <Layout title="Welcome">
+    <Layout title="Home">
       <div className="page home">
         <p className="block pb-1 md:hidden">Joaquin A. Moquette</p>
         <p className="pb-2">Developer &bull; Designer &bull; Minimalist</p>

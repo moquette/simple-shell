@@ -2009,6 +2009,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-helmet@npm:^6.1.5":
+  version: 6.1.5
+  resolution: "@types/react-helmet@npm:6.1.5"
+  dependencies:
+    "@types/react": "*"
+  checksum: d059cc084d3b3071cce3421bb1170dd42819cf39b81afe60d4fbd66c5ef9ffeaadf1802df80efd9553258f621678f69ceb5a21d73df0d8539d40ae9a0f995485
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:^18.0.8":
   version: 18.0.8
   resolution: "@types/react@npm:18.0.8"
@@ -7538,6 +7547,7 @@ __metadata:
     "@types/node": ^17.0.30
     "@types/react": ^18.0.8
     "@types/react-dom": ^18.0.3
+    "@types/react-helmet": ^6.1.5
     "@types/serve-static": ^1.13.10
     "@types/tapable": ^2.2.2
     "@types/webpack": ^5.28.0
