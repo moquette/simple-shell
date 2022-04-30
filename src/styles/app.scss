@@ -33,7 +33,7 @@
     }
   }
   footer {
-    @apply pb-5 pt-0 text-gray-400;
+    @apply pb-5 pt-0 text-gray-400 text-xs;
     .icon-box {
       @apply container mx-auto flex  max-w-sm flex-wrap justify-center text-center text-gray-400;
       div {
@@ -88,6 +88,16 @@
   }
   .active {
     @apply text-black;
+  }
+
+  .contact-form {
+    div {
+      @apply mb-5;
+    }
+  }
+
+  .button {
+    @apply bg-gray-100 font-light rounded-md py-2 px-4 cursor-pointer;
   }
 }
 

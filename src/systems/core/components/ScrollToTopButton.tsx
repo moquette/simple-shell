@@ -16,7 +16,7 @@ export const ScrollToTopButton = (props) => {
         })
       }}
     >
-      <RiArrowUpSLine className="min-w-full text-4xl" />
+      <RiArrowUpSLine className="min-w-full text-4xl text-gray-400" />
     </a>
   )
 }

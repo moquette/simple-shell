@@ -65,7 +65,7 @@ export const Footer = () => {
           }
         })}
       </div>
-      <p className="p-0 text-center text-[10px]">
+      <p className="p-0 text-center text-xs">
         Copyright &copy;{new Date().getFullYear()} &bull; All rights reserved.
       </p>
     </footer>
