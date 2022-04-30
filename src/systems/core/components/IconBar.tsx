@@ -4,7 +4,7 @@ import {RiQuillPenLine, RiLayoutTop2Line, RiMailLine} from 'react-icons/ri'
 
 export const IconBar = () => {
   return (
-    <ul className="flex content-center justify-center space-x-4 text-2xl">
+    <ul className="flex content-center justify-center space-x-4 text-3xl">
       <li>
         <NavLink to="/resume" className="hover:text-black">
           <RiQuillPenLine className="inline-block" />
