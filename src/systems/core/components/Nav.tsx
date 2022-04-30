@@ -18,7 +18,7 @@ export interface IAppProps {
 export const Nav = (props: IAppProps) => {
   return (
     <>
-      <nav className={`${props.className} full-page  w-full pt-3 md:block`}>
+      <nav className={`${props.className} full-page  w-full py-3 md:block`}>
         <div className="flex flex-row justify-between">
           <AppLink internal="/" className="nav-title hidden md:block">
             Joaquin A. Moquette

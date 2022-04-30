@@ -10,6 +10,10 @@
     @apply m-0 animate-fadeIn bg-gray-100 p-0 font-sans text-gray-500 antialiased;
   }
 
+  h2 {
+    @apply text-4xl font-black mb-5 antialiased text-black;
+  }
+
   p {
     @apply pb-5;
   }
