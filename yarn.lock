@@ -6978,7 +6978,7 @@ __metadata:
   version: 2.1.1
   resolution: "react-side-effect@npm:2.1.1"
   peerDependencies:
-    react: ^16.3.0 || ^17.0.0
+    react: ^16.3.0 || ^17.0.0 || ^18.0.0
   checksum: 324511ea8f6669555e166b4af280cdf46034bf0e33c486711e3ce17f88f6f21fed17055098408be1347657d0cbcd614bca944cf9f8e4ecfa96a21d13893fe9fc
   languageName: node
   linkType: hard
@@ -7570,7 +7570,7 @@ __metadata:
     sass-loader: ^12.6.0
     style-loader: ^3.3.1
     tailwindcss: ^3.0.24
-    ts-loader: ^9.2.9
+    ts-loader: ^9.3.0
     ts-node: ^10.7.0
     tsconfig-paths-webpack-plugin: ^3.5.2
     type-fest: ^2.12.2
@@ -8012,9 +8012,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:^9.2.9":
-  version: 9.2.9
-  resolution: "ts-loader@npm:9.2.9"
+"ts-loader@npm:^9.3.0":
+  version: 9.3.0
+  resolution: "ts-loader@npm:9.3.0"
   dependencies:
     chalk: ^4.1.0
     enhanced-resolve: ^5.0.0
@@ -8023,7 +8023,7 @@ __metadata:
   peerDependencies:
     typescript: "*"
     webpack: ^5.0.0
-  checksum: de817d4b7073bb029ca3e0742b5ef9432fdebb9f80707249b2121c09bb6ae6332ec755ab8e572f475ebfe5525a380a78b4e78a32b4d1c207a8fb1a2a0a490bac
+  checksum: 90755ac5850890ff433f2f8c7186d57ae4e172d389342d874b50ab233675f06c47c69043c517e2a2eeaf2251637ecfac607ac6190c89340f246ceff8c7f4af7a
   languageName: node
   linkType: hard
 
