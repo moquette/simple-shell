@@ -6,6 +6,7 @@ import Home from '@/pages/Home'
 import Resume from '@/pages/Resume'
 import Portfolio from '@/pages/Portfolio'
 import Contact from '@/pages/Contact'
+import {Footer} from '@/systems/core'
 import '@/styles/app.scss'
 
 export const App = () => {
@@ -45,6 +46,7 @@ export const App = () => {
             </Routes>
           </div>
         </main>
+        ;<Footer />
       </ScrollToTop>
     </Router>
   )

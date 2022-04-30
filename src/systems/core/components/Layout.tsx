@@ -1,7 +1,6 @@
 import React, {FC} from 'react'
 import {Helmet} from 'react-helmet'
 import {Nav} from '@/systems/core'
-import {Footer} from '@/systems/core'
 
 interface Props {
   head?: string
@@ -22,7 +21,6 @@ export const Layout: FC<Props> = ({head, children, title}) => {
       </Helmet>
       <Nav />
       {children}
-      <Footer />
     </>
   )
 }
