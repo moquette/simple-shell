@@ -28,12 +28,12 @@ export default function Contact() {
             <label>Name</label>
             <input
               autoFocus
-              className="border border-gray-400 mt-1 px-4 py-3 rounded-lg w-full"
+              className="mt-1 w-full rounded-lg border border-gray-400 px-4 py-3"
               type="text"
               {...register('name', {required: true})}
             />
             {errors.name && (
-              <span className=" relative top-[-30px] float-right text-xs pr-5">
+              <span className=" relative top-[-30px] float-right pr-5 text-xs">
                 Name is required
               </span>
             )}
@@ -41,12 +41,12 @@ export default function Contact() {
           <div>
             <label>email</label>
             <input
-              className="border border-gray-400 mt-1 px-4 py-3 rounded-lg w-full"
+              className="mt-1 w-full rounded-lg border border-gray-400 px-4 py-3"
               type="email"
               {...register('email', {required: true})}
             />
             {errors.email && (
-              <span className=" relative top-[-30px] float-right text-xs pr-5">
+              <span className=" relative top-[-30px] float-right pr-5 text-xs">
                 Email is required
               </span>
             )}
@@ -54,12 +54,12 @@ export default function Contact() {
           <div>
             <label>Message</label>
             <textarea
-              className="border border-gray-400 mt-1 px-4 py-3 rounded-lg w-full"
+              className="mt-1 w-full rounded-lg border border-gray-400 px-4 py-3"
               rows={6}
               {...register('message', {required: true})}
             />
             {errors.message && (
-              <span className=" relative top-[-30px] float-right text-xs pr-5">
+              <span className=" relative top-[-30px] float-right pr-5 text-xs">
                 Not a mind reader you know!
               </span>
             )}

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout title="Home">
       <div className="page home">
-        <p className="block pb-1 -mt-[15%]">Joaquin A. Moquette</p>
+        <p className="-mt-[15%] block pb-1">Joaquin A. Moquette</p>
         <p className="pb-2">Developer &bull; Designer &bull; Minimalist</p>
         <IconBar />
       </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import {ScrollToTopButton} from '@/systems/core'
 import {
   RiHome2Line,
   RiQuillPenLine,
@@ -8,7 +7,6 @@ import {
   RiLinkedinLine,
   RiGithubLine,
   RiMailLine,
-  RiArrowUpSLine,
 } from 'react-icons/ri'
 
 const menuItems = [

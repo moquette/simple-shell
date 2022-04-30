@@ -11,7 +11,7 @@
   }
 
   h2 {
-    @apply text-4xl font-black mb-5 antialiased text-black;
+    @apply mb-5 text-4xl font-black text-black antialiased;
   }
 
   p {
@@ -33,7 +33,7 @@
     }
   }
   footer {
-    @apply pb-5 pt-0 text-gray-400 text-xs;
+    @apply pb-5 pt-0 text-xs text-gray-400;
     .icon-box {
       @apply container mx-auto flex  max-w-sm flex-wrap justify-center text-center text-gray-400;
       div {
@@ -97,7 +97,7 @@
   }
 
   .button {
-    @apply bg-gray-100 font-light rounded-md py-2 px-4 cursor-pointer;
+    @apply cursor-pointer rounded-md bg-gray-100 py-2 px-4 font-light;
   }
 }
 

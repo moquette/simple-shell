@@ -18,7 +18,8 @@
     "format": "prettier './src/**/*.{js,jsx,ts,tsx,json,scss,css,md,html}' --write",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --quiet --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prep": "yarn format && yarn lint && yarn typecheck"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.0",
@@ -48,7 +49,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
-    "fork-ts-checker-webpack-plugin": "^7.2.8",
+    "fork-ts-checker-webpack-plugin": "^7.2.9",
     "html-webpack-plugin": "^5.5.0",
     "postcss": "^8.4.13",
     "postcss-import": "^14.1.0",

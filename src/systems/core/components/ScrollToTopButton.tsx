@@ -1,7 +1,7 @@
 import React from 'react'
 import {RiArrowUpSLine} from 'react-icons/ri'
 
-export const ScrollToTopButton = (props) => {
+export const ScrollToTopButton = () => {
   return (
     <a
       href="#"
