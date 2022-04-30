@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {ScrollToTop} from '@/systems/core'
+import {ScrollToTopButton} from '@/systems/core'
 import PageNotFound from '@/pages/PageNotFound'
 import Home from '@/pages/Home'
 import Resume from '@/pages/Resume'
@@ -45,8 +46,11 @@ export const App = () => {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
+          <div className="mt-2 mb-3 text-center">
+            <ScrollToTopButton />
+          </div>
         </main>
-        ;<Footer />
+        <Footer />
       </ScrollToTop>
     </Router>
   )

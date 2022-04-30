@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import {ScrollToTopButton} from '@/systems/core'
 import {
   RiHome2Line,
   RiQuillPenLine,
@@ -30,13 +31,13 @@ const menuItems = [
     icon: <RiGithubLine />,
     internal: false,
   },
+  {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
   {
     label: 'LinkedIn',
     path: 'https://www.linkedin.com/in/jmoquette/',
     icon: <RiLinkedinLine />,
     internal: false,
   },
-  {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
 ]
 export const Footer = () => {
   return (
@@ -63,19 +64,6 @@ export const Footer = () => {
             )
           }
         })}
-        <div>
-          <a
-            href="#"
-            rel="noreferrer"
-            onClick={(e) => {
-              e.preventDefault()
-              window.scrollTo(0, 0)
-            }}
-          >
-            <RiArrowUpSLine />
-            Top
-          </a>
-        </div>
       </div>
       <p className="p-0 text-center text-[10px]">
         Copyright &copy;{new Date().getFullYear()} &bull; All rights reserved.
