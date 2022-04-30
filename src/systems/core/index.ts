@@ -1,8 +1,10 @@
+// Components
 export {App} from './components/App'
-export {Layout} from './components/Layout'
 export {AppLink} from './components/AppLink'
 export {Footer} from './components/Footer'
 export {IconBar} from './components/IconBar'
+export {Layout} from './components/Layout'
 export {Nav} from './components/Nav'
 export {ScrollToTopButton} from './components/ScrollToTopButton'
+// Hooks
 export {ScrollToTop} from './hooks/ScrollToTop'
