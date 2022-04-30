@@ -1,2 +1,7 @@
 export {App} from './components/App'
 export {Layout} from './components/Layout'
+export {AppLink} from './components/AppLink'
+export {Footer} from './components/Footer'
+export {IconBar} from './components/IconBar'
+export {Nav} from './components/Nav'
+export {ScrollToTop} from './components/ScrollToTop'

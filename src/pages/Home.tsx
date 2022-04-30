@@ -1,6 +1,6 @@
 import React from 'react'
 import {Layout} from '@/systems/core'
-import IconBar from '@/systems/core/components/IconBar'
+import {IconBar} from '@/systems/core'
 
 export default function Home() {
   return (

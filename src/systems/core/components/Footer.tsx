@@ -38,7 +38,7 @@ const menuItems = [
   },
   {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
 ]
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer>
       <div className="icon-box">

@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
 import {Popover, Transition} from '@headlessui/react'
-import AppLink from './AppLink'
+import {AppLink} from '@/systems/core'
 import {
   RiHome2Line,
   RiQuillPenLine,
@@ -14,7 +14,8 @@ import {
 export interface IAppProps {
   className?: string
 }
-export default function Nav(props: IAppProps) {
+
+export const Nav = (props: IAppProps) => {
   return (
     <>
       <nav className={`${props.className} full-page  w-full pt-3 md:block`}>
