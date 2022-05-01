@@ -1,6 +1,6 @@
 // Components
 export {App} from './components/App'
-export {AppLink} from './components/AppLink'
+export {Button} from './components/Button'
 export {Footer} from './components/Footer'
 export {IconBar} from './components/IconBar'
 export {Layout} from './components/Layout'

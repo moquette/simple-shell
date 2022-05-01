@@ -1,10 +1,10 @@
-import React, {FC} from 'react'
+import React, {FC, ReactNode} from 'react'
 interface Props {
   title: string
   repo?: string
   demo?: string
   image?: string
-  children: JSX.Element
+  children: ReactNode
 }
 
 export const ProjectCard: FC<Props> = ({

@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
 import {Popover, Transition} from '@headlessui/react'
-import {AppLink} from '@/core'
+import {Button} from '@/core'
 import {
   RiHome2Line,
   RiQuillPenLine,
@@ -16,34 +16,34 @@ export const Nav = () => {
     <>
       <nav className="full-page  w-full py-3 md:block">
         <div className="flex flex-row justify-between">
-          <AppLink internal="/" className="nav-title hidden md:block">
+          <Button to="/" className="nav-title hidden md:block">
             Joaquin A. Moquette
-          </AppLink>
+          </Button>
 
           <ul className="hidden space-x-3 md:inline-flex">
             <li>
-              <AppLink internal="/resume">Resume</AppLink>
+              <Button to="/resume">Resume</Button>
             </li>
             <li>
-              <AppLink internal="/portfolio">Portfolio</AppLink>
+              <Button to="/portfolio">Portfolio</Button>
             </li>
             <li hidden>
-              <AppLink external="https://github.com/moquette/" className="pt-0">
+              <Button href="https://github.com/moquette/" className="pt-0">
                 GitHub
-              </AppLink>
+              </Button>
             </li>
             <li hidden>
-              <AppLink
-                external="https://www.linkedin.com/in/jmoquette/"
+              <Button
+                href="https://www.linkedin.com/in/jmoquette/"
                 className="pt-0"
               >
                 LinkedIn
-              </AppLink>
+              </Button>
             </li>
             <li>
-              <AppLink internal="/contact" className="pt-0">
+              <Button to="/contact" className="pt-0">
                 Contact
-              </AppLink>
+              </Button>
             </li>
           </ul>
           <Popover className="popover">

@@ -1,4 +1,4 @@
-import React, {FC} from 'react'
+import React, {FC, ReactNode} from 'react'
 import {Helmet} from 'react-helmet'
 import {Nav} from '@/core'
 
@@ -6,7 +6,7 @@ interface Props {
   title?: string
   theme?: string
   description?: string
-  children: JSX.Element
+  children: ReactNode
 }
 
 export const Layout: FC<Props> = ({title, theme, description, children}) => {
