@@ -46,14 +46,12 @@ const portfolioItems = [
     demo: 'https://pullupplate.com',
     image: 'https://moquette.us/assets/pullupplate.f8c33246.png',
     description: 'Northern sacramento comfort food.',
-    wip: true,
   },
   {
     title: 'AppKit',
     demo: 'https://appkit.moquette.us/',
     image: 'https://moquette.us/assets/appkit.8eb4fc73.png',
     description: 'Mobile UI kit.',
-    wip: true,
   },
 ]
 
