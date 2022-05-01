@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {Routes, Route, useLocation} from 'react-router-dom'
+import {TransitionGroup, CSSTransition} from 'react-transition-group'
 import {ScrollToTop} from '@/systems/core'
 import {ScrollToTopButton} from '@/systems/core'
 import PageNotFound from '@/pages/PageNotFound'
@@ -11,6 +12,7 @@ import {Footer} from '@/systems/core'
 import '@/styles/app.scss'
 
 export const App = () => {
+  const location = useLocation()
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [offset, setOffset] = useState(0)
 
@@ -33,25 +35,28 @@ export const App = () => {
       document.querySelector('main').classList.remove('end-of-page-animation')
     }
   }, 0)
+
   return (
-    <Router>
-      <ScrollToTop>
-        <main>
-          <div className="container">
-            <Routes>
-              <Route path="*" element={<PageNotFound />} />
-              <Route path="/" element={<Home />} />
-              <Route path="/resume" element={<Resume />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </div>
-          <div className="mt-2 mb-3 text-center">
-            <ScrollToTopButton />
-          </div>
-        </main>
-        <Footer />
-      </ScrollToTop>
-    </Router>
+    <TransitionGroup component={null}>
+      <CSSTransition key={location.key} classNames="fade" timeout={300}>
+        <ScrollToTop>
+          <main>
+            <div className="container">
+              <Routes>
+                <Route path="*" element={<PageNotFound />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </div>
+            <div className="mt-2 mb-3 text-center">
+              <ScrollToTopButton />
+            </div>
+          </main>
+          <Footer />
+        </ScrollToTop>
+      </CSSTransition>
+    </TransitionGroup>
   )
 }

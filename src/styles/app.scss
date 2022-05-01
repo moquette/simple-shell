@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply m-0 animate-fadeIn bg-gray-100 p-0 font-sans text-gray-500 antialiased;
+    @apply m-0 animate-fadeIn p-0 font-sans text-gray-500 antialiased;
   }
 
   h2 {
@@ -97,7 +97,7 @@
   }
 
   .button {
-    @apply cursor-pointer rounded-md bg-gray-100 py-2 px-4 font-light;
+    @apply cursor-pointer rounded-md bg-gray-200 py-2 px-4 font-light;
   }
 }
 
@@ -105,4 +105,28 @@
   .end-of-page-animation {
     @apply scale-[0.925] rounded-2xl;
   }
+}
+
+/**************************/
+/* CSS Animations Classes */
+/**************************/
+
+/* 
+The following class-endings: *-enter, *-enter-active, *-exit, *-exit-active,
+have very specific meanings to <CSSTransition />
+(see more: https://reactcommunity.org/react-transition-group/css-transition)
+*/
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 750ms ease-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
 }

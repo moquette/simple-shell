@@ -25,44 +25,43 @@ export default function Contact() {
         <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
           {/* register your input into the hook by invoking the "register" function */}
           <div>
-            <label>Name</label>
+            <label>
+              Name
+              {errors.name && (
+                <span className="pl-1 font-black text-red-500">*</span>
+              )}
+            </label>
             <input
-              autoFocus
-              className="mt-1 w-full rounded-lg border border-gray-400 px-4 py-3"
+              className="mt-1 w-full rounded-md border-2 border-gray-300 px-4 py-3"
               type="text"
               {...register('name', {required: true})}
             />
-            {errors.name && (
-              <span className=" relative top-[-30px] float-right pr-5 text-xs">
-                Name is required
-              </span>
-            )}
           </div>
           <div>
-            <label>email</label>
+            <label>
+              Email
+              {errors.email && (
+                <span className="pl-1 font-black text-red-500">*</span>
+              )}
+            </label>
             <input
-              className="mt-1 w-full rounded-lg border border-gray-400 px-4 py-3"
+              className="mt-1 w-full rounded-md border-2 border-gray-300 px-4 py-3"
               type="email"
               {...register('email', {required: true})}
             />
-            {errors.email && (
-              <span className=" relative top-[-30px] float-right pr-5 text-xs">
-                Email is required
-              </span>
-            )}
           </div>
           <div>
-            <label>Message</label>
+            <label>
+              Message
+              {errors.message && (
+                <span className="pl-1 font-black text-red-500">*</span>
+              )}
+            </label>
             <textarea
-              className="mt-1 w-full rounded-lg border border-gray-400 px-4 py-3"
+              className="mt-1 w-full rounded-md border-2 border-gray-300 px-4 py-3"
               rows={6}
               {...register('message', {required: true})}
             />
-            {errors.message && (
-              <span className=" relative top-[-30px] float-right pr-5 text-xs">
-                Not a mind reader you know!
-              </span>
-            )}
           </div>
           <input className="button float-right" type="submit" />
         </form>
