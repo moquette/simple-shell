@@ -43,7 +43,6 @@ const portfolioItems = [
   },
   {
     title: 'Pull Up Plate',
-    repo: 'https://pullupplate.com',
     demo: 'https://pullupplate.com',
     image: 'https://moquette.us/assets/pullupplate.f8c33246.png',
     description: 'Northern sacramento comfort food.',
@@ -51,7 +50,6 @@ const portfolioItems = [
   },
   {
     title: 'AppKit',
-    repo: 'https://appkit.moquette.us/',
     demo: 'https://appkit.moquette.us/',
     image: 'https://moquette.us/assets/appkit.8eb4fc73.png',
     description: 'Mobile UI kit.',
