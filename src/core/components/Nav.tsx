@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
 import {Popover, Transition} from '@headlessui/react'
-import {AppLink} from '@/systems/core'
+import {AppLink} from '@/core'
 import {
   RiHome2Line,
   RiQuillPenLine,

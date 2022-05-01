@@ -1,6 +1,6 @@
 import React, {FC} from 'react'
 import {Helmet} from 'react-helmet'
-import {Nav} from '@/systems/core'
+import {Nav} from '@/core'
 
 interface Props {
   title?: string

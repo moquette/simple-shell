@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import {Routes, Route, useLocation} from 'react-router-dom'
 import {TransitionGroup, CSSTransition} from 'react-transition-group'
-import {ScrollToTop} from '@/systems/core'
-import {ScrollToTopButton} from '@/systems/core'
+import {ScrollToTop} from '@/core'
+import {ScrollToTopButton} from '@/core'
 import PageNotFound from '@/pages/PageNotFound'
 import Home from '@/pages/Home'
 import Resume from '@/pages/Resume'
 import Portfolio from '@/pages/Portfolio'
 import Contact from '@/pages/Contact'
-import {Footer} from '@/systems/core'
-import '@/styles/app.scss'
+import {Footer} from '@/core'
 
 export const App = () => {
   const location = useLocation()

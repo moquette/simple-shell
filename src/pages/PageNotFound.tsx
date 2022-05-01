@@ -1,5 +1,5 @@
 import React from 'react'
-import {Layout} from '@/systems/core'
+import {Layout} from '@/core'
 
 export default function PageNotFound() {
   return (

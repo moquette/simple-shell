@@ -1,6 +1,6 @@
 import React from 'react'
-import {Layout} from '@/systems/core'
-import {ProjectCard as Project} from '@/systems/core'
+import {Layout} from '@/core'
+import {ProjectCard as Project} from '@/core'
 
 const portfolioItems = [
   {

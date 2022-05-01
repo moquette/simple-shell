@@ -1,6 +1,6 @@
 import React from 'react'
 import {useForm, SubmitHandler} from 'react-hook-form'
-import {Layout} from '@/systems/core'
+import {Layout} from '@/core'
 
 type Inputs = {
   name: string
