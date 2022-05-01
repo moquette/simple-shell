@@ -1,5 +1,4 @@
 import React, {FC} from 'react'
-import {RiGithubLine} from 'react-icons/ri'
 interface Props {
   title: string
   repo?: string
@@ -16,13 +15,17 @@ export const ProjectCard: FC<Props> = ({
   children,
 }) => {
   return (
-    <div className="rounded-lg border border-gray-200 shadow-md">
-      <a href={demo} target="_blank" rel="noreferrer">
-        <img className="rounded-t-lg" src={image} alt="" />
-      </a>
-      <div className="px-5 pt-5">
+    <div className="grid content-between rounded-lg shadow-md">
+      <div>
+        <a href={demo} target="_blank" rel="noreferrer">
+          <img className="rounded-t-lg" src={image} alt="" />
+        </a>
+      </div>
+      <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight">{title}</h5>
         {children}
+      </div>
+      <div className="px-5 ">
         <p className="grid grid-cols-2 gap-5 pt-2">
           <a
             href={repo}
