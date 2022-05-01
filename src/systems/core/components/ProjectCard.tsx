@@ -15,15 +15,17 @@ export const ProjectCard: FC<Props> = ({
   children,
 }) => {
   return (
-    <div className="grid content-between rounded-lg shadow-md">
+    <div className="grid grid-cols content-between rounded-lg shadow-md">
       <div>
-        <a href={demo} target="_blank" rel="noreferrer">
-          <img className="rounded-t-lg" src={image} alt="" />
-        </a>
-      </div>
-      <div className="p-5">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight">{title}</h5>
-        {children}
+        <div>
+          <a href={demo} target="_blank" rel="noreferrer">
+            <img className="rounded-t-lg" src={image} alt="splash" />
+          </a>
+        </div>
+        <div className="px-5 pt-2 flex-1">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight">{title}</h5>
+          {children}
+        </div>
       </div>
       <div className="px-5 ">
         <p className="grid grid-cols-2 gap-5 pt-2">
