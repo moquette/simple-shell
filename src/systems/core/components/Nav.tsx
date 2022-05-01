@@ -11,14 +11,10 @@ import {
   RiMailLine,
 } from 'react-icons/ri'
 
-export interface IAppProps {
-  className?: string
-}
-
-export const Nav = (props: IAppProps) => {
+export const Nav = () => {
   return (
     <>
-      <nav className={`${props.className} full-page  w-full py-3 md:block`}>
+      <nav className="full-page  w-full py-3 md:block">
         <div className="flex flex-row justify-between">
           <AppLink internal="/" className="nav-title hidden md:block">
             Joaquin A. Moquette
