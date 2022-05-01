@@ -26,6 +26,7 @@ const forkTsCheckerWebpackPlugin = new ForkTsCheckerWebpackPlugin({
 })
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
   template: path.resolve(__dirname, 'public/index.html'),
+  favicon: path.resolve(__dirname, 'public/favicon.png'),
   minify: {
     removeComments: isProd,
     collapseWhitespace: isProd,
