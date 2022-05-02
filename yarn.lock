@@ -3718,6 +3718,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"emailjs-com@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "emailjs-com@npm:3.2.0"
+  checksum: c6d0a1d60786405482928efcb33e9fda9e1c131a0380a1861b73a1f1139923794fbbb6679d83c632b4a2cf2d2dbe08541dd68db61ce78db6ed28b6ed68b4e00f
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:^8.0.0":
   version: 8.0.0
   resolution: "emoji-regex@npm:8.0.0"
@@ -7623,6 +7630,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.21.0
     autoprefixer: ^10.4.6
     css-loader: ^6.7.1
+    emailjs-com: ^3.2.0
     eslint: ^8.14.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-import: ^2.26.0

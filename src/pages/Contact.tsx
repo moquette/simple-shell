@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import {useForm, SubmitHandler} from 'react-hook-form'
+import emailjs from 'emailjs-com'
+
 import {Layout} from '@/core'
 
 type Inputs = {
@@ -11,18 +13,56 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: {errors},
   } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+  const onSubmit: SubmitHandler<Inputs> = (data, e) => {
+    const form = e.target
+    console.log(data)
+    emailjs
+      .sendForm(
+        'service_ngum7gm',
+        'contact',
+        form.current,
+        'user_sn4R7nQ9vRWZFgkzONumK'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+    form.reset()
+    const fadeEffect = setInterval(function () {
+      if (!form.style.opacity) {
+        form.style.opacity = 1
+      }
+      if (form.style.opacity > 0) {
+        form.style.opacity -= 0.1
+        setTimeout(() => {
+          form.style.display = 'none'
+        }, 750)
+      } else {
+        clearInterval(fadeEffect)
+      }
+    }, 75)
+  }
 
-  console.log(watch('email')) // watch input value by passing the name of it
+  const form = useRef()
+
   return (
     <Layout title="Contact">
       <div className="page contact min-h-screen pt-7">
         <h2>Contact</h2>
-        <p>I&apos;ll get back as soon as possible.</p>
-        <form className="mb-5" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          id="contact-form"
+          className="mb-5"
+          onSubmit={handleSubmit(onSubmit)}
+          ref={form}
+        >
+          <p>I&apos;ll get back as soon as possible.</p>
+
           {/* register your input into the hook by invoking the "register" function */}
           <div className="pb-5">
             <label>
@@ -63,11 +103,16 @@ export default function Contact() {
               {...register('message', {required: true})}
             />
           </div>
-          <input
-            className="button float-right rounded-md bg-gray-200 py-2 px-4 text-center font-light"
-            type="submit"
-          />
+          <div className="pb-5 text-right">
+            <input
+              className="button cursor-pointer rounded-md bg-gray-200 py-2 px-4 text-center font-light"
+              type="submit"
+            />
+          </div>
         </form>
+        <p id="thank-you-msg" className="opacity-0">
+          Thank you, your message was sent.
+        </p>
       </div>
     </Layout>
   )
