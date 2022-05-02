@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {Button} from '@/core'
 import {
   RiHome2Line,
   RiQuillPenLine,
@@ -9,62 +9,44 @@ import {
   RiMailLine,
 } from 'react-icons/ri'
 
-const menuItems = [
-  {label: 'Resume', path: '/resume', icon: <RiQuillPenLine />, internal: true},
-  {
-    label: 'Portfolio',
-    path: '/portfolio',
-    icon: <RiLayoutTop2Line />,
-    internal: true,
-  },
-  {
-    label: 'Contact',
-    path: '/contact',
-    icon: <RiMailLine />,
-    internal: true,
-  },
-  {
-    label: 'GitHub',
-    path: 'https://github.com/moquette/',
-    icon: <RiGithubLine />,
-    internal: false,
-  },
-  {label: 'Home', path: '/', icon: <RiHome2Line />, internal: true},
-  {
-    label: 'LinkedIn',
-    path: 'https://www.linkedin.com/in/jmoquette/',
-    icon: <RiLinkedinLine />,
-    internal: false,
-  },
-]
 export const Footer = () => {
   return (
-    <footer>
-      <div className="icon-box">
-        {menuItems.map(({label, icon, path, internal}) => {
-          if (internal) {
-            return (
-              <div key={label}>
-                <NavLink to={path}>
-                  {icon}
-                  {label}
-                </NavLink>
-              </div>
-            )
-          } else {
-            return (
-              <div key={label}>
-                <a href={path} target="_blank" rel="noreferrer">
-                  {icon}
-                  {label}
-                </a>
-              </div>
-            )
-          }
-        })}
+    <footer className="pb-5 pt-0 text-xs text-gray-400">
+      <div className="container mx-auto flex max-w-sm flex-wrap  justify-center px-5 text-center text-gray-400 md:px-10">
+        <Button to="/" className="mb-10 w-1/3">
+          <RiHome2Line className="w-full text-3xl" />
+          Home
+        </Button>
+        <Button to="/resume" className="mb-10 w-1/3">
+          <RiQuillPenLine className="w-full text-3xl" />
+          Resume
+        </Button>
+        <Button to="/portfolio" className="mb-10 w-1/3">
+          <RiLayoutTop2Line className="w-full text-3xl" />
+          Portfolio
+        </Button>
+        <Button href="https://github.com/moquette/" className="mb-10 w-1/3">
+          <RiGithubLine className="w-full text-3xl" />
+          GitHub
+        </Button>
+        <Button
+          href="https://www.linkedin.com/in/jmoquette/"
+          className="mb-10 w-1/3"
+        >
+          <RiLinkedinLine className="w-full text-3xl" />
+          LinkedIn
+        </Button>
+        <Button to="/contact" className="mb-10 w-1/3">
+          <RiMailLine className="w-full text-3xl" />
+          Contact
+        </Button>
       </div>
-      <p className="p-0 text-center text-xs">
-        Copyright &copy;{new Date().getFullYear()} &bull; All rights reserved.
+      <p className="text-center text-xs">
+        &copy;
+        {new Date().getFullYear()}.{' '}
+        <a href="https://github.com/moquette/" target="_blank" rel="noreferrer">
+          Simple Shell
+        </a>
       </p>
     </footer>
   )

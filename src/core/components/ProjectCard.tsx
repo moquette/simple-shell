@@ -34,7 +34,7 @@ export const ProjectCard: FC<Props> = ({
               href={repo}
               target="_blank"
               rel="noreferrer"
-              className="button text-center"
+              className="button rounded-md bg-gray-200 py-2 px-4 text-center font-light"
             >
               Code
             </a>
@@ -43,7 +43,7 @@ export const ProjectCard: FC<Props> = ({
             href={demo}
             target="_blank"
             rel="noreferrer"
-            className="button text-center"
+            className="button rounded-md bg-gray-200 py-2 px-4 text-center font-light"
           >
             Demo
           </a>

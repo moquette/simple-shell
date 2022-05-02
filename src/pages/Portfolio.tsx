@@ -58,7 +58,7 @@ const portfolioItems = [
 export default function Portfolio() {
   return (
     <Layout title="Portfolio">
-      <div className="page portfolio pt-7">
+      <div className="page portfolio min-h-screen pt-7">
         <h2>Portfolio</h2>
         <div className="grid gap-5 pt-2 md:grid-cols-2">
           {portfolioItems.map(({title, repo, demo, image, description}) => {

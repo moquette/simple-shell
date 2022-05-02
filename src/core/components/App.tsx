@@ -39,8 +39,8 @@ export const App = () => {
     <TransitionGroup component={null}>
       <CSSTransition key={location.key} classNames="fade" timeout={300}>
         <ScrollToTop>
-          <main>
-            <div className="container">
+          <main className="bg-white shadow-2xl duration-500 ease-in-out">
+            <div className="container mx-auto max-w-screen-lg px-5 md:px-10">
               <Routes>
                 <Route path="*" element={<PageNotFound />} />
                 <Route path="/" element={<Home />} />

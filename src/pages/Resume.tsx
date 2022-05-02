@@ -4,7 +4,7 @@ import {Layout} from '@/core'
 export default function Resume() {
   return (
     <Layout title="Resume">
-      <div className="page resume pt-7">
+      <div className="page resume min-h-screen pt-7">
         <h2>Resume</h2>
         <div>
           <h3>Joaquin A. Moquette</h3>

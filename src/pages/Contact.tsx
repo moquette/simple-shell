@@ -19,12 +19,12 @@ export default function Contact() {
   console.log(watch('email')) // watch input value by passing the name of it
   return (
     <Layout title="Contact">
-      <div className="page contact pt-7">
+      <div className="page contact min-h-screen pt-7">
         <h2>Contact</h2>
         <p>I&apos;ll get back as soon as possible.</p>
-        <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
+        <form className="mb-5" onSubmit={handleSubmit(onSubmit)}>
           {/* register your input into the hook by invoking the "register" function */}
-          <div>
+          <div className="pb-5">
             <label>
               Name
               {errors.name && (
@@ -37,7 +37,7 @@ export default function Contact() {
               {...register('name', {required: true})}
             />
           </div>
-          <div>
+          <div className="pb-5">
             <label>
               Email
               {errors.email && (
@@ -50,7 +50,7 @@ export default function Contact() {
               {...register('email', {required: true})}
             />
           </div>
-          <div>
+          <div className="pb-5">
             <label>
               Message
               {errors.message && (
@@ -63,7 +63,10 @@ export default function Contact() {
               {...register('message', {required: true})}
             />
           </div>
-          <input className="button float-right" type="submit" />
+          <input
+            className="button float-right rounded-md bg-gray-200 py-2 px-4 text-center font-light"
+            type="submit"
+          />
         </form>
       </div>
     </Layout>
