@@ -1965,10 +1965,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.30":
-  version: 17.0.30
-  resolution: "@types/node@npm:17.0.30"
-  checksum: b3cd2db6474aae3ddac5a312f340f6e4ca200429371e62cb74698fe7f23d7414d0200f643204ddfaa797846328539359e3797d7f2baaf3cdd643b159cf53baa6
+"@types/node@npm:^17.0.31":
+  version: 17.0.31
+  resolution: "@types/node@npm:17.0.31"
+  checksum: 704618350f8420d5c47db0f7778398e821b7724369946f5c441a7e6b9343295553936400eb8309f0b07d5e39c240988ab3456b983712ca86265dabc9aee4ad3d
   languageName: node
   linkType: hard
 
@@ -2748,6 +2748,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"autoprefixer@npm:^10.4.6":
+  version: 10.4.6
+  resolution: "autoprefixer@npm:10.4.6"
+  dependencies:
+    browserslist: ^4.20.3
+    caniuse-lite: ^1.0.30001334
+    fraction.js: ^4.2.0
+    normalize-range: ^0.1.2
+    picocolors: ^1.0.0
+    postcss-value-parser: ^4.2.0
+  peerDependencies:
+    postcss: ^8.1.0
+  bin:
+    autoprefixer: bin/autoprefixer
+  checksum: 4e8fbe94e8d66e77908958a041e3c1db267eb6d6d710f567db6ec4c349364082a75fef96ae808a6bdbc884bb2c63f1981067858317ef4e6af3d7561b551a634f
+  languageName: node
+  linkType: hard
+
 "babel-plugin-dynamic-import-node@npm:^2.3.3":
   version: 2.3.3
   resolution: "babel-plugin-dynamic-import-node@npm:2.3.3"
@@ -3008,6 +3026,13 @@ __metadata:
   version: 1.0.30001332
   resolution: "caniuse-lite@npm:1.0.30001332"
   checksum: e54182ea42ab3d2ff1440f9a6480292f7ab23c00c188df7ad65586312e4da567e8bedd5cb5fb8f0ff4193dc027a54e17e0b3c0b6db5d5a3fb61c7726ff9c45b3
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001334":
+  version: 1.0.30001334
+  resolution: "caniuse-lite@npm:1.0.30001334"
+  checksum: 1a1c783942d53ca37dc3dbdd7c4a6f7994996d0bfd178d4f4cdd714c6b09d9d9f48a3a2452e009e8203aba4b7a2da43f3d9d88060668a46fc237dbe0d39358a3
   languageName: node
   linkType: hard
 
@@ -4344,9 +4369,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fork-ts-checker-webpack-plugin@npm:^7.2.9":
-  version: 7.2.9
-  resolution: "fork-ts-checker-webpack-plugin@npm:7.2.9"
+"fork-ts-checker-webpack-plugin@npm:^7.2.11":
+  version: 7.2.11
+  resolution: "fork-ts-checker-webpack-plugin@npm:7.2.11"
   dependencies:
     "@babel/code-frame": ^7.16.7
     chalk: ^4.1.2
@@ -4366,7 +4391,7 @@ __metadata:
   peerDependenciesMeta:
     vue-template-compiler:
       optional: true
-  checksum: a1d2ac744d6fdfd471b995774ead735ded5fd42a6bf211a7a207db2721779709b964829ef2e49be48ab67c0ea358f024df9c69836e7e1658959a27f2095d131a
+  checksum: b02942753e1c90b62ca674bfa004bc1561049b0c8c0fdc4d62bb13c156c93a0f2f496a7d3f95f93adcbac46c830bf83ba4c9fdef64cf871cdedf2f69f403511f
   languageName: node
   linkType: hard
 
@@ -4852,7 +4877,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^7.0.0":
+"husky@npm:^7.0.4":
   version: 7.0.4
   resolution: "husky@npm:7.0.4"
   bin:
@@ -7587,7 +7612,7 @@ __metadata:
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.5
     "@svgr/webpack": ^6.2.1
     "@types/express-serve-static-core": ^4.17.28
-    "@types/node": ^17.0.30
+    "@types/node": ^17.0.31
     "@types/react": ^18.0.8
     "@types/react-dom": ^18.0.3
     "@types/react-helmet": ^6.1.5
@@ -7596,7 +7621,7 @@ __metadata:
     "@types/webpack": ^5.28.0
     "@typescript-eslint/eslint-plugin": ^5.21.0
     "@typescript-eslint/parser": ^5.21.0
-    autoprefixer: ^10.4.5
+    autoprefixer: ^10.4.6
     css-loader: ^6.7.1
     eslint: ^8.14.0
     eslint-config-prettier: ^8.5.0
@@ -7604,9 +7629,9 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: ^7.29.4
     eslint-plugin-react-hooks: ^4.5.0
-    fork-ts-checker-webpack-plugin: ^7.2.9
+    fork-ts-checker-webpack-plugin: ^7.2.11
     html-webpack-plugin: ^5.5.0
-    husky: ^7.0.0
+    husky: ^7.0.4
     postcss: ^8.4.13
     postcss-import: ^14.1.0
     postcss-loader: ^6.2.1
