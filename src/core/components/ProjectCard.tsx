@@ -28,7 +28,19 @@ export const ProjectCard: FC<Props> = ({
         </div>
       </div>
       <div className="px-5 ">
-        <div className="grid grid-cols-2 gap-5 pb-5 pt-2">
+        <div
+          className={`grid ${
+            repo ? `grid-cols-2` : `grid-cols-1`
+          } gap-5 pb-5 pt-2`}
+        >
+          <a
+            href={demo}
+            target="_blank"
+            rel="noreferrer"
+            className="button rounded-md bg-gray-200 py-2 px-4 text-center font-light"
+          >
+            Demo
+          </a>
           {repo && (
             <a
               href={repo}
@@ -39,14 +51,6 @@ export const ProjectCard: FC<Props> = ({
               Code
             </a>
           )}
-          <a
-            href={demo}
-            target="_blank"
-            rel="noreferrer"
-            className="button rounded-md bg-gray-200 py-2 px-4 text-center font-light"
-          >
-            Demo
-          </a>
         </div>
       </div>
     </div>
