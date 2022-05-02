@@ -78,9 +78,5 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.8.1"
   },
-  "lint-staged": {
-    "./src/**/*.{js,jsx,ts,tsx,json,scss,css,md,html}": "prettier --write",
-    "./src/**/*.{ts,tsx}": ["eslint", "tsc-files --noEmit --pretty"]
-  },
   "packageManager": "yarn@3.2.0"
 }
