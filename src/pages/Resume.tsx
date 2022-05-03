@@ -16,14 +16,15 @@ export default function Resume() {
         </div>
         <div>
           <h3>Experience</h3>
-          <div>
-            <div>
-              <p>Principal Developer / Designer</p>
-              <p>
-                2017 to Present
-                <br />
-                Dovergence
-              </p>
+          <div className="mb-10">
+            <div className="flex justify-between">
+              <div>
+                <p className="p-0·font-black·text-black">
+                  Principal Developer / Designer
+                </p>
+                <p>Dovergence</p>
+              </div>
+              <p className="whitespace-nowrap·text-right">2017 to Present</p>
             </div>
 
             <p>
@@ -40,14 +41,15 @@ export default function Resume() {
               techniques, and suggestions.
             </p>
           </div>
-          <div>
-            <div>
-              <p>Principal UX Developer</p>
-              <p>
-                2004 to 2017
-                <br />
-                Oracle, Inc
-              </p>
+          <div className="mb-10">
+            <div className="flex justify-between">
+              <div>
+                <p className="p-0·font-black·text-black">
+                  Principal UX Developer
+                </p>
+                <p>Oracle, Inc</p>
+              </div>
+              <p className="text-right">2004 to 2017</p>
             </div>
             <p>
               Managed, evaluated, and created solutions for consumer and
@@ -65,14 +67,13 @@ export default function Resume() {
               including mentoring junior employees and services.
             </p>
           </div>
-          <div>
-            <div>
-              <p>Sr. Web Developer</p>
-              <p>
-                2002 to 2004
-                <br />
-                McAfee
-              </p>
+          <div className="mb-10">
+            <div className="flex justify-between">
+              <div>
+                <p className="p-0·font-black·text-black">Sr. Web Developer</p>
+                <p>McAfee, Inc</p>
+              </div>
+              <p>2002 to 2004</p>
             </div>
             <p>
               Supported the design and implementation of the consumer-facing
@@ -89,14 +90,15 @@ export default function Resume() {
               overall maintenance of the website.
             </p>
           </div>
-          <div>
-            <div>
-              <p>Developer / UI Designer</p>
-              <p>
-                1996 to 2002
-                <br />
-                Siemens
-              </p>
+          <div className="mb-10">
+            <div className="flex justify-between">
+              <div>
+                <p className="p-0·font-black·text-black">
+                  Developer / UI Designer
+                </p>
+                <p>Siemens</p>
+              </div>
+              <p>1996 to 2002</p>
             </div>
             <p>
               Developer, designer and support member of a multimillion
@@ -143,7 +145,7 @@ export default function Resume() {
         </div>
         <div>
           <h3>Education</h3>
-          <div>
+          <div className="grid md:grid-cols-2">
             <div>
               <p>
                 Harbor College
@@ -164,7 +166,7 @@ export default function Resume() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="hidden">
           <p>
             <a
               href="https://docs.google.com/document/d/1pSviiXAwTSFYCvvsoMeR4P2lOY5Ycmy9KmkQrD0wftc/edit?usp=sharing"
