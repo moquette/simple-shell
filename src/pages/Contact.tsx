@@ -16,6 +16,7 @@ export default function Contact() {
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data, e) => {
     //console.log(data)
+    /*
     emailjs
       .sendForm(
         'service_ngum7gm',
@@ -31,6 +32,7 @@ export default function Contact() {
           console.log(error.text)
         }
       )
+    */
     e.target.reset()
     e.target.remove()
     window.scrollTo({
@@ -38,14 +40,15 @@ export default function Contact() {
       left: 0,
       behavior: 'smooth',
     })
-    document.getElementById('msg').innerHTML = 'Thank you, message sent!'
+    document.getElementById('msg').innerHTML =
+      'Thank you!<br/>Your message was sent!'
   }
 
   const form = useRef()
 
   return (
     <Layout title="Contact">
-      <div className="page contact min-h-screen pt-7">
+      <div id="page-wrapper" className="page contact min-h-screen pt-7">
         <h2>Contact</h2>
         <p id="msg">I&apos;ll get back as soon as possible.</p>
         <form
