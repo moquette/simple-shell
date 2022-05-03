@@ -8,7 +8,7 @@ export default function Resume() {
         <h2>Resume</h2>
         <div>
           <h3>Joaquin A. Moquette</h3>
-          <p className="pb-10 text-2xl font-thin text-black">
+          <p className="pb-10 text-xl">
             Entrepreneurial self-starter with extraordinary problem-solving
             skills. Enjoys creating powerful applications, rich user experiences
             and solving complex design problems with dead-simple code.
