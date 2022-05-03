@@ -65,7 +65,7 @@ export default function Portfolio() {
             return (
               <Project
                 title={title}
-                image={`/images/portfolio/${image}`}
+                image={require(`../assets/images/portfolio/${image}`).default}
                 repo={repo}
                 demo={demo}
                 key={title}
