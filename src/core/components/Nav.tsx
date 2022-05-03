@@ -15,12 +15,11 @@ export const Nav = () => {
   return (
     <>
       <nav className="full-page  w-full py-3 md:block">
-        <div className="flex flex-row justify-between">
-          <Button to="/" className="nav-title hidden md:block">
-            Joaquin A. Moquette
-          </Button>
-
+        <div className="flex flex-row justify-end">
           <ul className="hidden space-x-3 md:inline-flex">
+            <li>
+              <Button to="/">Home</Button>
+            </li>
             <li>
               <Button to="/resume">Resume</Button>
             </li>
