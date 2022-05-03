@@ -1,7 +1,6 @@
 import React, {useRef} from 'react'
 import {useForm, SubmitHandler} from 'react-hook-form'
 import emailjs from 'emailjs-com'
-
 import {Layout} from '@/core'
 
 type Inputs = {
@@ -16,8 +15,7 @@ export default function Contact() {
     formState: {errors},
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data, e) => {
-    const form = e.target
-    console.log(data)
+    //console.log(data)
     emailjs
       .sendForm(
         'service_ngum7gm',
@@ -33,20 +31,14 @@ export default function Contact() {
           console.log(error.text)
         }
       )
-    form.reset()
-    const fadeEffect = setInterval(function () {
-      if (!form.style.opacity) {
-        form.style.opacity = 1
-      }
-      if (form.style.opacity > 0) {
-        form.style.opacity -= 0.1
-        setTimeout(() => {
-          form.style.display = 'none'
-        }, 750)
-      } else {
-        clearInterval(fadeEffect)
-      }
-    }, 75)
+    e.target.reset()
+    e.target.remove()
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
+    document.getElementById('msg').innerHTML = 'Thank you, message sent!'
   }
 
   const form = useRef()
@@ -55,14 +47,13 @@ export default function Contact() {
     <Layout title="Contact">
       <div className="page contact min-h-screen pt-7">
         <h2>Contact</h2>
+        <p id="msg">I&apos;ll get back as soon as possible.</p>
         <form
           id="contact-form"
           className="mb-5"
           onSubmit={handleSubmit(onSubmit)}
           ref={form}
         >
-          <p>I&apos;ll get back as soon as possible.</p>
-
           {/* register your input into the hook by invoking the "register" function */}
           <div className="pb-5">
             <label>
@@ -110,9 +101,6 @@ export default function Contact() {
             />
           </div>
         </form>
-        <p id="thank-you-msg" className="opacity-0">
-          Thank you, your message was sent.
-        </p>
       </div>
     </Layout>
   )
