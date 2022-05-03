@@ -19,7 +19,7 @@ export default function Resume() {
           <div className="mb-10">
             <div className="flex justify-between">
               <div>
-                <p className="p-0·font-black·text-black">
+                <p className="p-0 font-black text-black">
                   Principal Developer / Designer
                 </p>
                 <p>Dovergence</p>
@@ -44,7 +44,7 @@ export default function Resume() {
           <div className="mb-10">
             <div className="flex justify-between">
               <div>
-                <p className="p-0·font-black·text-black">
+                <p className="p-0 font-black text-black">
                   Principal UX Developer
                 </p>
                 <p>Oracle, Inc</p>
@@ -70,7 +70,7 @@ export default function Resume() {
           <div className="mb-10">
             <div className="flex justify-between">
               <div>
-                <p className="p-0·font-black·text-black">Sr. Web Developer</p>
+                <p className="p-0 font-black text-black">Sr. Web Developer</p>
                 <p>McAfee, Inc</p>
               </div>
               <p>2002 to 2004</p>
@@ -93,7 +93,7 @@ export default function Resume() {
           <div className="mb-10">
             <div className="flex justify-between">
               <div>
-                <p className="p-0·font-black·text-black">
+                <p className="p-0 font-black text-black">
                   Developer / UI Designer
                 </p>
                 <p>Siemens</p>
