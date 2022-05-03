@@ -2,6 +2,7 @@ import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import {TsconfigPathsPlugin} from 'tsconfig-paths-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import CopywebpackPlugin from 'copy-webpack-plugin'
 import webpack, {Configuration} from 'webpack'
 import devServer from 'webpack-dev-server'
 import path from 'path'
@@ -14,7 +15,6 @@ const port = 3000
 
 // utils
 const arrayFilterEmpty = (array) => array.filter((x) => !!x)
-const fileName = (ext) => `[name].[contenthash].${ext}`
 
 // Plugins
 const reactRefreshPlugin = new ReactRefreshWebpackPlugin()
@@ -31,6 +31,18 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
     removeComments: isProd,
     collapseWhitespace: isProd,
   },
+})
+
+const copyWebpackPlugin = new CopywebpackPlugin({
+  patterns: [
+    {
+      from: path.resolve(__dirname, 'public'),
+      to: path.resolve(__dirname, 'dist'),
+      globOptions: {
+        ignore: ['**/index.html'],
+      },
+    },
+  ],
 })
 
 //rules
@@ -119,7 +131,8 @@ export default {
   },
   output: {
     publicPath: '/',
-    filename: fileName('js'),
+    filename: 'js/bundle.[contenthash].js',
+    assetModuleFilename: 'images/bundle.[contenthash][ext][query]',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -136,6 +149,7 @@ export default {
 
   plugins: arrayFilterEmpty([
     isDev && new ReactRefreshWebpackPlugin(),
+    copyWebpackPlugin,
     htmlWebpackPlugin,
     forkTsCheckerWebpackPlugin,
   ]),
@@ -148,6 +162,7 @@ export default {
 
   devtool: isDev ? 'eval-source-map' : 'source-map',
   devServer: {
+    static: './dist',
     client: {
       overlay: false,
     },

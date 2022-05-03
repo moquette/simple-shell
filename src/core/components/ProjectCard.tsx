@@ -19,7 +19,7 @@ export const ProjectCard: FC<Props> = ({
       <div>
         <div>
           <a href={demo} target="_blank" rel="noreferrer">
-            <img className="rounded-t-lg" src={image} alt="splash" />
+            <img className="rounded-t-lg" src={image} alt={title} />
           </a>
         </div>
         <div className="flex-1 px-5 pt-2">
