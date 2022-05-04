@@ -4,20 +4,23 @@ import {RiQuillPenLine, RiLayoutTop2Line, RiMailLine} from 'react-icons/ri'
 
 export const IconBar = () => {
   return (
-    <ul className="flex content-center justify-center space-x-4 text-3xl">
+    <ul className="flex content-center justify-center space-x-5 text-3xl">
       <li>
         <NavLink to="/resume" className="hover:text-black">
-          <RiQuillPenLine className="inline-block" />
+          <RiQuillPenLine className="block mx-auto" />
+          <p className="text-xs p-0">Resume</p>
         </NavLink>
       </li>
       <li>
         <NavLink to="/portfolio" className="hover:text-black">
-          <RiLayoutTop2Line className="inline-block" />
+          <RiLayoutTop2Line className="block mx-auto" />
+          <p className="text-xs p-0">Portfolio</p>
         </NavLink>
       </li>
       <li>
         <NavLink to="/contact" className="hover:text-black">
-          <RiMailLine className="inline-block" />
+          <RiMailLine className="block mx-auto" />
+          <p className="text-xs p-0">Contact</p>  
         </NavLink>
       </li>
     </ul>
