@@ -24,7 +24,7 @@ export default function Resume() {
                 </p>
                 <p>Dovergence</p>
               </div>
-              <p className="whitespace-nowrap·text-right">2017 to Present</p>
+              <p className="whitespace-nowrap·text-right">Since 2017</p>
             </div>
 
             <p>
