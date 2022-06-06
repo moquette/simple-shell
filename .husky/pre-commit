@@ -1,5 +1,5 @@
-#!/bin/sh
-# shellcheck disable=1091
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
 npx lint-staged
+yarn git-branch-is main && yarn version patch && git add package.json

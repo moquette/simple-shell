@@ -1,5 +1,5 @@
-import React from 'react'
 import {Layout} from '@/core'
+import React from 'react'
 
 export default function Resume() {
   return (
@@ -7,11 +7,11 @@ export default function Resume() {
       <div className="page resume min-h-screen pt-7">
         <h2>Resume</h2>
         <div>
-          <h3>Joaquin A. Moquette</h3>
+          <h3>Michael Anthony</h3>
           <p className="pb-10 text-xl">
-            Entrepreneurial self-starter with extraordinary problem-solving
-            skills. Enjoys creating powerful applications, rich user experiences
-            and solving complex design problems with dead-simple code.
+            Lorem ipsum dolor sit amet, ea aeque ubique nec, qui populo oporteat
+            et, mea id idque minim consectetuer. Ad nibh iracundia ius, ei sumo
+            causae habemus has.
           </p>
         </div>
         <div>
@@ -22,23 +22,28 @@ export default function Resume() {
                 <p className="p-0 font-black text-black">
                   Principal Developer / Designer
                 </p>
-                <p>Dovergence</p>
+                <p>Widget Inc.</p>
               </div>
               <p className="whitespace-nowrap·text-right">Since 2017</p>
             </div>
 
             <p>
-              Principal application developer/designer of cloud-based
-              applications and backend development, implementation of automated
-              processes, QA testing, data maintenance and migration of
-              applications, APIs and integration of third-party open-source
-              solutions and services.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <p>
-              Meet with the clients and stakeholders to understand requirements,
-              discuss solutions, and provide detailed progress updates.
-              Facilitate the uptake of client solutions with training of tools,
-              techniques, and suggestions.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
           <div className="mb-10">
@@ -47,62 +52,54 @@ export default function Resume() {
                 <p className="p-0 font-black text-black">
                   Principal UX Developer
                 </p>
-                <p>Oracle, Inc</p>
+                <p>Widget, Inc</p>
               </div>
               <p className="text-right">2004 to 2017</p>
             </div>
             <p>
-              Managed, evaluated, and created solutions for consumer and
-              enterprise web applications. This included the iterative design of
-              mockups and functional prototypes for both end-user and technical
-              evaluation, the evaluation and testing of new architectures, web
-              and cloud technologies, features, and services.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <p>
-              Created, designed, and enhanced publishing platforms and tools for
-              rapid development and delivery of content. Contributed, reviewed,
-              authored, and communicated pattern and coding standards and
-              guidelines. Was the &apos;Go to&apos; person for insight and
-              knowledge on tools and techniques within the organization,
-              including mentoring junior employees and services.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
           <div className="mb-10">
             <div className="flex justify-between">
               <div>
                 <p className="p-0 font-black text-black">Sr. Web Developer</p>
-                <p>McAfee, Inc</p>
+                <p>Widget, Inc</p>
               </div>
               <p>2002 to 2004</p>
             </div>
             <p>
-              Supported the design and implementation of the consumer-facing
-              McAfee.com and business intranet portals. This included the
-              analysis of corporate architecture needs and design creation and
-              implementation.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <p>
-              Designed a web interface for &apos;Virus Center,&apos; an external
-              application that allowed consumers to look up and track viruses,
-              origins, and solutions. Created user experience design solutions
-              for e-commerce project managers and data mining specialists to
-              increase conversion rates, including updates, upgrades, and
-              overall maintenance of the website.
-            </p>
-          </div>
-          <div className="mb-10">
-            <div className="flex justify-between">
-              <div>
-                <p className="p-0 font-black text-black">
-                  Developer / UI Designer
-                </p>
-                <p>Siemens</p>
-              </div>
-              <p>1996 to 2002</p>
-            </div>
-            <p>
-              Developer, designer and support member of a multimillion
-              enterprise call center software acquisition.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
@@ -148,20 +145,11 @@ export default function Resume() {
           <div className="grid md:grid-cols-2">
             <div>
               <p>
-                Harbor College
+                ABC College
                 <br />
                 Programming / Business Administration
                 <br />
-                Los Angeles, CA / 1996
-              </p>
-            </div>
-            <div>
-              <p>
-                Hawthorne HS
-                <br />
-                Information Technology
-                <br />
-                Hawthorne, CA / 1986
+                Los Angeles, CA / 2012 - 2016
               </p>
             </div>
           </div>

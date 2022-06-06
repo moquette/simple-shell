@@ -1,57 +1,39 @@
-import React from 'react'
 import {Layout} from '@/core'
 import {ProjectCard as Project} from '@/core'
+import React from 'react'
 
 const portfolioItems = [
   {
-    title: 'Base',
-    repo: 'https://github.com/moquette/base',
-    demo: 'https://base.moquette.us',
+    title: 'Project 1',
+    repo: 'https://github.com/moquette/',
+    demo: 'https://github.com/moquette/',
     image: 'base.png',
-    description: 'A wicked FAST React boilerplate.',
+    description:
+      'Lorem ipsum dolor sit amet, ea aeque ubique nec, qui populo oporteat et, mea id idque minim consectetuer. Ad nibh iracundia ius, ei sumo causae habemus has.',
   },
   {
-    title: 'Hello',
-    repo: 'https://github.com/moquette/hello',
-    demo: 'https://hello.moquette.us',
+    title: 'Project 2',
+    repo: 'https://github.com/moquette/',
+    demo: 'https://github.com/moquette/',
     image: 'hello.png',
     description:
-      'Minimalistic cover page that makes a perfect GitHub user landing page, Single Page Application.',
+      'Lorem ipsum dolor sit amet, ea aeque ubique nec, qui populo oporteat et, mea id idque minim consectetuer. Ad nibh iracundia ius, ei sumo causae habemus has.',
   },
   {
-    title: 'RBSX',
-    repo: 'https://github.com/moquette/rbsx',
-    demo: 'https://rbsx.moquette.us',
+    title: 'Project 3',
+    repo: 'https://github.com/moquette/',
+    demo: 'https://github.com/moquette/',
     image: 'rbsx.png',
     description:
-      'A wicked fast technology stack for your next website or application.',
+      'Lorem ipsum dolor sit amet, ea aeque ubique nec, qui populo oporteat et, mea id idque minim consectetuer. Ad nibh iracundia ius, ei sumo causae habemus has.',
   },
   {
-    title: 'RTSX',
-    repo: 'https://github.com/moquette/rtsx',
-    demo: 'https://rtsx.moquette.us',
+    title: 'Project 4',
+    repo: 'https://github.com/moquette/',
+    demo: 'https://github.com/moquette/',
     image: 'rtsx.png',
     description:
-      'A wicked FAST Next.js stack for your next website or application.',
-  },
-  {
-    title: 'Backpack',
-    repo: 'https://github.com/moquette/backpack',
-    demo: 'https://backpack.moquette.us',
-    image: 'backpack.png',
-    description: 'A production ready webpack 5 boilerplate.',
-  },
-  {
-    title: 'Pull Up Plate',
-    demo: 'https://pullupplate.com',
-    image: 'pullupplate.png',
-    description: 'Northern sacramento comfort food.',
-  },
-  {
-    title: 'AppKit',
-    demo: 'https://appkit.moquette.us/',
-    image: 'appkit.png',
-    description: 'Mobile UI kit.',
+      'Lorem ipsum dolor sit amet, ea aeque ubique nec, qui populo oporteat et, mea id idque minim consectetuer. Ad nibh iracundia ius, ei sumo causae habemus has.',
   },
 ]
 

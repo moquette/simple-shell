@@ -7,20 +7,20 @@ export const IconBar = () => {
     <ul className="flex content-center justify-center space-x-5 text-3xl">
       <li>
         <NavLink to="/resume" className="hover:text-black">
-          <RiQuillPenLine className="block mx-auto" />
-          <p className="text-xs p-0">Resume</p>
+          <RiQuillPenLine className="mx-auto block" />
+          <p className="p-0 text-xs">Resume</p>
         </NavLink>
       </li>
       <li>
         <NavLink to="/portfolio" className="hover:text-black">
-          <RiLayoutTop2Line className="block mx-auto" />
-          <p className="text-xs p-0">Portfolio</p>
+          <RiLayoutTop2Line className="mx-auto block" />
+          <p className="p-0 text-xs">Portfolio</p>
         </NavLink>
       </li>
       <li>
         <NavLink to="/contact" className="hover:text-black">
-          <RiMailLine className="block mx-auto" />
-          <p className="text-xs p-0">Contact</p>  
+          <RiMailLine className="mx-auto block" />
+          <p className="p-0 text-xs">Contact</p>
         </NavLink>
       </li>
     </ul>

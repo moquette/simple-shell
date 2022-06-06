@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
-import {useForm, SubmitHandler} from 'react-hook-form'
-import emailjs from 'emailjs-com'
+import {SubmitHandler, useForm} from 'react-hook-form'
+
 import {Layout} from '@/core'
 
 type Inputs = {
@@ -17,21 +17,7 @@ export default function Contact() {
   const onSubmit: SubmitHandler<Inputs> = (data, e) => {
     //console.log(data)
     /*
-    emailjs
-      .sendForm(
-        'service_ngum7gm',
-        'contact',
-        form.current,
-        'user_sn4R7nQ9vRWZFgkzONumK'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
+    Email submission logic here.
     */
     e.target.reset()
     e.target.remove()
