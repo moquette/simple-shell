@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 animate-fadeIn p-0 font-sans text-gray-500 antialiased;
+  }
+
+  h2 {
+    @apply mb-5 text-4xl font-black text-black antialiased;
+  }
+  h3 {
+    @apply mb-5 text-3xl font-black text-black antialiased;
+  }
+
+  p {
+    @apply pb-5 text-lg;
+  }
+}
+
+@layer components {
+  footer {
+    a:hover:not(.active) {
+      @apply text-gray-500;
+    }
+  }
+  .pill {
+    @apply float-left mr-2  mb-2 rounded-md  bg-gray-100 px-2 text-center;
+  }
+  nav .navbar-link {
+    @apply border-b border-transparent pb-1;
+    &.active {
+      @apply border-b border-black pb-1;
+    }
+    &:hover:not(.active) {
+      @apply text-black;
+    }
+  }
+  .popover {
+    @apply fixed  top-3 right-7 md:hidden;
+    .popover-button {
+      @apply rounded-lg  transition  duration-150 ease-in-out focus:outline-none;
+    }
+    .popover-panel {
+      @apply absolute left-full z-10 mt-1 w-[175px] max-w-xs -translate-x-full transform;
+      .wrapper {
+        @apply relative overflow-hidden rounded-lg  shadow-xl ring-1 ring-gray-200;
+        > div {
+          @apply relative grid gap-2 rounded-lg bg-white p-2;
+        }
+      }
+      .navbar-link {
+        @apply w-full rounded-lg px-2 py-1 transition duration-150 ease-in-out;
+        &.active {
+          @apply bg-gray-600 text-white;
+        }
+        &:hover:not(.active) {
+          @apply bg-gray-100 text-black;
+        }
+        svg {
+          @apply inline-block text-lg;
+        }
+      }
+    }
+  }
+  .active {
+    @apply text-black;
+  }
+}
+
+@layer utilities {
+  .end-of-page-animation {
+    @apply scale-[0.925] rounded-2xl;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 750ms ease-out;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit.fade-exit-active {
+    opacity: 0;
+  }
+}
