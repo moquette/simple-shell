@@ -1,7 +1,7 @@
 {
   "name": "simple-shell",
   "description": "Personal website or portfolio boilerplate.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "src/index.tsx",
   "repository": "https://github.com/moquette/simple-shell.git",
   "keywords": [
@@ -14,7 +14,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-cli serve --mode=development --env development",
-    "build": "yarn typecheck && webpack --mode=production --env production --progress",
+    "build": "webpack --mode=production --env production --progress",
     "postinstall": "husky install"
   },
   "dependencies": {
