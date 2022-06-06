@@ -1,7 +1,7 @@
 {
   "name": "simple-shell",
   "description": "Personal website or portfolio boilerplate.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/index.tsx",
   "repository": "https://github.com/moquette/simple-shell.git",
   "keywords": [
