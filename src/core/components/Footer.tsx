@@ -1,13 +1,14 @@
-import React from 'react'
-import {Button} from '@/core'
 import {
+  RiGithubLine,
   RiHome2Line,
-  RiQuillPenLine,
   RiLayoutTop2Line,
   RiLinkedinLine,
-  RiGithubLine,
   RiMailLine,
+  RiQuillPenLine,
 } from 'react-icons/ri'
+
+import {Button} from '@/core'
+import React from 'react'
 
 export const Footer = () => {
   return (
@@ -25,14 +26,14 @@ export const Footer = () => {
           <RiLayoutTop2Line className="w-full text-3xl" />
           Portfolio
         </Button>
-        <Button href="https://github.com/moquette/" className="mb-10 w-1/3">
+        <Button
+          href="https://github.com/moquette/simple-shell"
+          className="mb-10 w-1/3"
+        >
           <RiGithubLine className="w-full text-3xl" />
           GitHub
         </Button>
-        <Button
-          href="https://www.linkedin.com/in/jmoquette/"
-          className="mb-10 w-1/3"
-        >
+        <Button href="#" className="mb-10 w-1/3">
           <RiLinkedinLine className="w-full text-3xl" />
           LinkedIn
         </Button>

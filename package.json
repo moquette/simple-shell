@@ -1,7 +1,7 @@
 {
   "name": "simple-shell",
   "description": "Personal website or portfolio boilerplate.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.tsx",
   "repository": "https://github.com/moquette/simple-shell.git",
   "keywords": [
@@ -15,11 +15,6 @@
   "scripts": {
     "start": "webpack-cli serve --mode=development --env development",
     "build": "yarn typecheck && webpack --mode=production --env production --progress",
-    "format": "prettier './src/**/*.{js,jsx,ts,tsx,json,scss,css,md,html}' --write",
-    "lint": "eslint './src/**/*.{ts,tsx}'",
-    "lint:fix": "eslint './src/**/*.{ts,tsx}' --quiet --fix",
-    "typecheck": "tsc --noEmit",
-    "prep": "yarn format && yarn lint && yarn typecheck",
     "postinstall": "husky install"
   },
   "dependencies": {
