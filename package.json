@@ -1,7 +1,7 @@
 {
   "name": "simple-shell",
-  "description": "Personal website or portfolio boilerplate.",
-  "version": "1.0.5",
+  "description": "A minimalistic cover page that makes for a perfect Portfolio GitHub user landing page or Single Page Application.",
+  "version": "1.0.6",
   "main": "src/index.tsx",
   "repository": "https://github.com/moquette/simple-shell.git",
   "keywords": [
