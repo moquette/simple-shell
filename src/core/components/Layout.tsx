@@ -1,5 +1,5 @@
 import React, {FC, ReactNode} from 'react'
-import {Helmet} from 'react-helmet'
+
 import {Nav} from '@/core'
 
 interface Props {
@@ -18,11 +18,9 @@ export const Layout: FC<Props> = ({title, theme, description, children}) => {
     description || 'Joaquin A. Moquette resume and portfolio.'
   return (
     <>
-      <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="theme-color" content={pageTheme}></meta>
-        <meta name="description" content={pageDescription} />
-      </Helmet>
+      <title>{pageTitle}</title>
+      <meta name="theme-color" content={pageTheme}></meta>
+      <meta name="description" content={pageDescription} />
       <Nav />
       {children}
     </>
