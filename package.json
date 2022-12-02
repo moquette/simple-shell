@@ -1,7 +1,7 @@
 {
   "name": "simple-shell",
   "description": "A minimalistic cover page that makes for a perfect Portfolio GitHub user landing page or Single Page Application.",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": "src/index.tsx",
   "repository": "https://github.com/moquette/simple-shell.git",
   "keywords": [
@@ -52,7 +52,7 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.2",
     "postcss": "^8.4.19",
-    "postcss-import": "^15.0.0",
+    "postcss-import": "^15.0.1",
     "postcss-loader": "^7.0.2",
     "postcss-nesting": "^10.2.0",
     "postcss-preset-env": "^7.8.3",
